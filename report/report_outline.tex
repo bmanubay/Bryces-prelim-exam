@@ -1,0 +1,103 @@
+\RequirePackage{fix-cm}
+\RequirePackage[hyphens]{url}
+\RequirePackage[final]{graphicx} % need to show figures in draft mode
+\documentclass[aps,pre,onecolumn,nofootinbib,superscriptaddress,linenumbers,12pt, draft,tightenlines]{revtex4-1}
+
+
+% Change to a sans serif font.
+\usepackage{sourcesanspro}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+%\usepackage[font=sf,justification=justified]{caption}
+\usepackage[font=sf]{floatrow}
+
+% Rework captions to use sans serif font.
+\makeatletter
+\renewcommand\@make@capt@title[2]{%
+ \@ifx@empty\float@link{\@firstofone}{\expandafter\href\expandafter{\float@link}}%
+  {\textbf{#1}}\sf\@caption@fignum@sep#2\quad
+}%
+\makeatother
+
+%\linespread{0.956}
+
+\usepackage{listings} % For code examples
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{dcolumn}
+\usepackage{boxedminipage}
+\usepackage[colorlinks=true,citecolor=blue,linkcolor=blue]{hyperref}
+\usepackage[]{microtype}
+\usepackage[obeyFinal]{todonotes}
+\usepackage{import}
+\usepackage{setspace, siunitx, amsmath,amsfonts, adjustbox,booktabs, cleveref}
+%\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\setcounter{secnumdepth}{5}
+
+% Units
+\DeclareSIUnit\Molar{\textsc{m}}
+
+
+% Comments
+\newcounter{comment}
+\newcommand{\comment}[2][]{%
+% initials of the author (optional) + note in the margin
+\refstepcounter{comment}%
+{%
+\setstretch{0.7}% spacing
+\todo[inline, color={cyan!45},size=\small]{%
+\textbf{\footnotesize [\uppercase{#1}\thecomment]:}~#2}%
+}}
+
+% Start supplementary sections
+
+\newcommand{\beginsupplement}{%
+        \onecolumngrid
+        \setcounter{table}{0}
+        \renewcommand{\thetable}{S\arabic{table}}%
+        \setcounter{figure}{0}
+        \renewcommand{\thefigure}{S\arabic{figure}}%
+     }
+
+\graphicspath{{figures/}}
+\floatsetup[table]{capposition=top}
+\begin{document}
+
+%\documentclass[a4paper,12pt]{article}
+%\usepackage[superscript,biblabel]{cite}
+%\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{A method for redesigning molecular mechanics force field parameterization by use of a Bayesian statistical framework}
+
+\author{Bryce C. Manubay} 
+\email{bryce.manubay@colorado.edu}
+\affiliation{University of Colorado - Department of Chemical and Biological Engineering}
+
+% Date
+\date{\today}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ABSTRACT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstract}
+This document describes a collected set of best practices for computing various physical properties from molecular simulations of liquid mixtures.
+
+\emph{Keywords: best practices; molecular dynamics simulation; physical property computation}
+
+
+\end{abstract}
+\maketitle
+
+\listoftodos
+
+\end{document}
