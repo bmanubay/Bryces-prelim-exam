@@ -37,6 +37,7 @@
 \usepackage{subcaption}
 \usepackage{enumitem}
 \usepackage{titlesec}
+\usepackage{enumitem}
 \setcounter{secnumdepth}{5}
 
 % Units
@@ -100,4 +101,21 @@ This document describes a collected set of best practices for computing various 
 
 \listoftodos
 
+\section{Outline}
+\subsection{Objectives}
+\begin{itemize}
+ \item Molecular dynamics simulation is becoming more integral to many scientific studies
+  \begin{itemize}
+   \item Observing physical phenomena at a molecular scale (phase changes, ligand docking, etc.}
+   \item Drug discovery and deisgn of new molecules
+  \end{itemize}
+ \item The necessity for transferable and accurate force fields is therefore imperative
+  \begin{itemize}
+   \item Transferability encourages use and provides convenience for scientists with wide arrays of research interests
+   \item Inaccurate force fields have been shown to grossly misrepresent even somewhat simple molecular systems (gaff2 lol, check for some other cites)
+  \end{itemize}
+ \item A possible solution to the given problem can be by recasting the force field parameterization issue as a bayesian inference problem
+ \item The objective of this paper is introduce a framework for using disparate experimental data in order to parameterize molecular mechanics force fields
+ \item In this paper I will describe the process of collecting and organizing large amounts of high quality thermochemical data and preliminary use of the Multistate Bennett Acceptance Ratio (MBAR) as a means to improve sampling speed during the parameterization process.      
+\end{itemize}
 \end{document}
