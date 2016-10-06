@@ -643,11 +643,10 @@ FUNCTION {book}
     'skip$
     { "See Ref.\ \cite{" crossref "}." * * write$ newline$ }
   if$
-  if$
   address empty$
     'skip$
     { ", " address * * }
-
+  if$
 }
 
 FUNCTION {booklet}

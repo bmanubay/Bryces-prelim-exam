@@ -7,23 +7,11 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: report_outlineNotes.bib
 Database file #2: report_outline.bib
 Warning--Missing address in entry transferability2.
-You can't pop an empty literal stack for entry transferability2
-while executing---line 944 of file prsty.bst
-You can't pop an empty literal stack for entry transferability2
-while executing---line 944 of file prsty.bst
-You can't pop an empty literal stack for entry transferability2
-while executing---line 944 of file prsty.bst
-ptr=3, stack=
-'115
-skip$
-1
----the literal stack isn't empty for entry transferability2
-while executing---line 944 of file prsty.bst
 Warning--Warning: pages missing in entry ffcomp2.
 You've used 8 entries,
             1921 wiz_defined-function locations,
             557 strings with 5362 characters,
-and the built_in function-call counts, 2004 in all, are:
+and the built_in function-call counts, 2005 in all, are:
 = -- 73
 > -- 122
 < -- 0
@@ -49,7 +37,7 @@ pop$ -- 49
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 141
+skip$ -- 142
 stack$ -- 0
 substring$ -- 106
 swap$ -- 57
@@ -61,4 +49,4 @@ warning$ -- 2
 while$ -- 18
 width$ -- 9
 write$ -- 42
-(There were 4 error messages)
+(There were 2 warnings)
