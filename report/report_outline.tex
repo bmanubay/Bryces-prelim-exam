@@ -38,6 +38,7 @@
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{enumitem}
+\setcitestyle{super}
 \setcounter{secnumdepth}{5}
 
 % Units
@@ -104,22 +105,28 @@ This document describes a collected set of best practices for computing various 
 \section{Outline}
 \subsection{Objectives $\left(0.5 pages\right)$}
 \begin{itemize}
- \item Molecular dynamics simulation is becoming more integral to many scientific studies
+ \item Molecular dynamics (MD) simulation is fast becoming a more useful tool in many scientific studies.
+ \item However, some limitations remain in the ability of MD force fields to accurately and transferably describe molecular environments.
+ \item Currently, force fields are parameterized heuristically and require the chemical intuition of experts to manually correct parameters, leading to a more suitable product. Additionally, the creation of a transferable method to update existing force fields based on new experimental data is limited due to lack of understanding and lack of consistency in how the original parameterization was done 
+ \item A possible solution to these problems is by recasting the force field parameterization process as a bayesian inference problem.
+ \item The objective of this paper is introduce a framework for using high quality experimental data in order to parameterize molecular mechanics force fields
+ \item In this paper I will describe the overall parameterization framework and my roles in the project, first, collecting and organizing large amounts of high quality thermochemical data and, currently, investigating use of the Multistate Bennett Acceptance Ratio (MBAR) as a means to improve throughput by reducing simulation requirements during the parameterization process.      
+\end{itemize}
+
+\subsection{Significance $\left(0.5 pages\right)$}
+\begin{itemize}
+ \item A broad variety of research has been greatly impacted by the advent and improvement of MD simulation tools.  
   \begin{itemize}
    \item Observing physical phenomena at a molecular scale (phase changes, ligand docking, etc.)\cite{villin}
    \item Drug discovery and deisgn of new molecules\cite{drug_discov}
   \end{itemize}
- \item The necessity for transferable and accurate force fields is therefore imperative
+ \item The fundamental part of molecular simulation for describing the energetic interactions of a system is referred to as a force field, hence transferable and quantitatively accurate force fields are imperative for the use of molecular simulation tools to be validated.
   \begin{itemize}
-   \item Transferability encourages use and provides convenience for scientists with wide arrays of research interests
-   \item Inaccurate force fields have been shown to grossly misrepresent even somewhat simple molecular systems\cite{ffcomp1,ffcomp2}
+   \item Transferability of MD force fields and particularly sets of parameters is an extremely popular topic (and current limitation) in the molecular simulation field.\cite{transferability1,transferability2,transferability3,transferability4} Transferability encourages use by providing convenience for scientists with wide arrays of research interests and simplifying the mystery that most observe force fields with.
+   \item Inaccurate and poorly parameterized force fields have been shown to grossly misrepresent molecular systems\cite{ffcomp1,ffcomp2}
   \end{itemize}
- \item A possible solution to the given problem can be by recasting the force field parameterization issue as a bayesian inference problem
- \item The objective of this paper is introduce a framework for using disparate experimental data in order to parameterize molecular mechanics force fields
- \item In this paper I will describe the process of collecting and organizing large amounts of high quality thermochemical data and preliminary use of the Multistate Bennett Acceptance Ratio (MBAR) as a means to improve sampling speed during the parameterization process.      
 \end{itemize}
 
-\subsection{Significance $\left(0.5 pages\right)$}
 
 \subsection{Background and related literature $\left(1.5 pages \pm 0.5 pages\right)$}
 
