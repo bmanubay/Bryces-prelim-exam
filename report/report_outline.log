@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  9 OCT 2016 01:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  9 OCT 2016 01:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1210,27 +1210,42 @@ Package caption Info: listings package is loaded.
 )
 \c@subfigure=\count279
 \c@subtable=\count280
-) (/usr/local/texlive/2016/texmf-dist/tex/latex/enumitem/enumitem.sty
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box84
+\beforetitleunit=\skip81
+\aftertitleunit=\skip82
+\ttl@plus=\dimen306
+\ttl@minus=\dimen307
+\ttl@toksa=\toks43
+\titlewidth=\dimen308
+\titlewidthlast=\dimen309
+\titlewidthfirst=\dimen310
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip81
-\enit@outerparindent=\dimen306
-\enit@toks=\toks43
-\enit@inbox=\box84
+\labelindent=\skip83
+\enit@outerparindent=\dimen311
+\enit@toks=\toks44
+\enit@inbox=\box85
 \enitdp@description=\count281
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
-\ttl@box=\box85
-\beforetitleunit=\skip82
-\aftertitleunit=\skip83
-\ttl@plus=\dimen307
-\ttl@minus=\dimen308
-\ttl@toksa=\toks44
-\titlewidth=\dimen309
-\titlewidthlast=\dimen310
-\titlewidthfirst=\dimen311
+(/usr/local/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+\Gm@cnth=\count282
+\Gm@cntv=\count283
+\c@Gm@tempcnt=\count284
+\Gm@bindingoffset=\dimen312
+\Gm@wd@mp=\dimen313
+\Gm@odd@mp=\dimen314
+\Gm@even@mp=\dimen315
+\Gm@layoutwidth=\dimen316
+\Gm@layoutheight=\dimen317
+\Gm@layouthoffset=\dimen318
+\Gm@layoutvoffset=\dimen319
+\Gm@dimlist=\toks45
 )
-\c@comment=\count282
+\c@comment=\count285
 Class revtex4-1 Info: colortbl package is loaded. (Proceeding with fingers cros
 sed.) on input line 71.
 
@@ -1280,17 +1295,17 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 71.
  (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count283
-\scratchdimen=\dimen312
+\scratchcounter=\count286
+\scratchdimen=\dimen320
 \scratchbox=\box86
-\nofMPsegments=\count284
-\nofMParguments=\count285
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count286
-\MPscratchDim=\dimen313
-\MPnumerator=\count287
-\makeMPintoPDFobject=\count288
-\everyMPtoPDFconversion=\toks46
+\nofMPsegments=\count287
+\nofMParguments=\count288
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count289
+\MPscratchDim=\dimen321
+\MPnumerator=\count290
+\makeMPintoPDFobject=\count291
+\everyMPtoPDFconversion=\toks47
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1311,7 +1326,7 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: floatrow package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count289
+\c@lstlisting=\count292
 \AtBeginShipoutBox=\box87
 
 
@@ -1324,7 +1339,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count290
+\c@section@level=\count293
 )
 LaTeX Info: Redefining \ref on input line 71.
 LaTeX Info: Redefining \pageref on input line 71.
@@ -1344,30 +1359,45 @@ Dictionary: translator-basic-dictionary, Language: English
 (/usr/local/texlive/2016/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2016/03/01 v2.6q siunitx: Abbreviated units
 )
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=25.25pt plus 4.0pt minus 12.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 71.
 \openout3 = `report_outlineNotes.bib'.
 
- (/usr/local/texlive/2016/texmf-dist/tex/latex/lineno/lineno.sty
-Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count291
-\output=\toks47
-\linenoprevgraf=\count292
-\linenumbersep=\dimen314
-\linenumberwidth=\dimen315
-\c@linenumber=\count293
-\c@pagewiselinenumber=\count294
-\c@LN@truepage=\count295
-\c@internallinenumber=\count296
-\c@internallinenumbers=\count297
-\quotelinenumbersep=\dimen316
-\bframerule=\dimen317
-\bframesep=\dimen318
-\bframebox=\box88
-LaTeX Info: Redefining \\ on input line 3056.
-)
-\c__siunitx_mathsf_int=\count298
+\c__siunitx_mathsf_int=\count294
 LaTeX Font Info:    Try loading font information for U+msa on input line 71.
-
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -1376,13 +1406,11 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 71.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-\c__siunitx_mathtt_int=\count299
+\c__siunitx_mathtt_int=\count295
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
 (Font)              scaled to size 14.4pt on input line 93.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
 (Font)              scaled to size 14.4pt on input line 93.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 93.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 93.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
@@ -1407,10 +1435,10 @@ LaTeX Font Warning: Font shape `OMS/SourceSansPro-LF/m/n' undefined
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 109.
 [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2]
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
 (Font)              scaled to size 12.0pt on input line 130.
 
-[2]
 Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
@@ -1436,13 +1464,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--134
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `en'. Using the pattern for
-** the default language instead.
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `en'. Using the pattern for
-** the default language instead.
 [4]
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
@@ -1466,13 +1494,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 35753 strings out of 493013
- 692151 string characters out of 6133329
- 779403 words of memory out of 5000000
- 38786 multiletter control sequences out of 15000+600000
- 128484 words of font info for 83 fonts, out of 8000000 for 9000
+ 35996 strings out of 493013
+ 695486 string characters out of 6133329
+ 784196 words of memory out of 5000000
+ 39031 multiletter control sequences out of 15000+600000
+ 118714 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,8n,92p,10388b,982s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,8n,92p,10388b,951s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/sourcesanspro/a_5tbsmu.en
 c}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/sourcesanspro/a_ggs4wk.en
 c}</usr/local/texlive/2016/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSan
@@ -1486,7 +1514,7 @@ pe1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy8.pfb>
-Output written on report_outline.pdf (5 pages, 196354 bytes).
+Output written on report_outline.pdf (5 pages, 194460 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  47 compressed objects within 1 object stream
