@@ -119,4 +119,78 @@ L.-P. Wang, J.~Chen, and T.~Van~Voorhis, ``Systematic {Parametrization} of
   Available: \url{http://dx.doi.org/10.1021/ct300826t}
 \BIBentrySTDinterwordspacing
 
+\bibitem{charmm1}
+\BIBentryALTinterwordspacing
+B.~R. Brooks, R.~E. Bruccoleri, B.~D. Olafson, D.~J. States, S.~Swaminathan,
+  and M.~Karplus, ``\BIBforeignlanguage{en}{{CHARMM}: {A} program for
+  macromolecular energy, minimization, and dynamics calculations},''
+  \emph{\BIBforeignlanguage{en}{J. Comput. Chem.}}, vol.~4, no.~2, pp.
+  187--217, Jun. 1983. [Online]. Available:
+  \url{http://onlinelibrary.wiley.com/doi/10.1002/jcc.540040211/abstract}
+\BIBentrySTDinterwordspacing
+
+\bibitem{charmm2}
+\BIBentryALTinterwordspacing
+A.~D. MacKerell, D.~Bashford, M.~Bellott, R.~L. Dunbrack, J.~D. Evanseck, M.~J.
+  Field, S.~Fischer, J.~Gao, H.~Guo, S.~Ha, D.~Joseph-McCarthy, L.~Kuchnir,
+  K.~Kuczera, F.~T.~K. Lau, C.~Mattos, S.~Michnick, T.~Ngo, D.~T. Nguyen,
+  B.~Prodhom, W.~E. Reiher, B.~Roux, M.~Schlenkrich, J.~C. Smith, R.~Stote,
+  J.~Straub, M.~Watanabe, J.~Wiórkiewicz-Kuczera, D.~Yin, and M.~Karplus,
+  ``All-{Atom} {Empirical} {Potential} for {Molecular} {Modeling} and
+  {Dynamics} {Studies} of {Proteins},'' \emph{J. Phys. Chem. B}, vol. 102,
+  no.~18, pp. 3586--3616, Apr. 1998. [Online]. Available:
+  \url{http://dx.doi.org/10.1021/jp973084f}
+\BIBentrySTDinterwordspacing
+
+\bibitem{mm2}
+\BIBentryALTinterwordspacing
+G.~C. Soo, F.~K. Cartledge, R.~J.~Unwalla, and S.~Profeta, ``Development of a
+  molecular mechanics ({MM}2) force field for α-chlorosilanes,''
+  \emph{Tetrahedron}, vol.~46, no.~24, pp. 8005--8018, Jan. 1990. [Online].
+  Available:
+  \url{http://www.sciencedirect.com/science/article/pii/S0040402001814575}
+\BIBentrySTDinterwordspacing
+
+\bibitem{mmff}
+\BIBentryALTinterwordspacing
+T.~A. Halgren, ``\BIBforeignlanguage{en}{Merck molecular force field. {I}.
+  {Basis}, form, scope, parameterization, and performance of {MMFF}94},''
+  \emph{\BIBforeignlanguage{en}{J. Comput. Chem.}}, vol.~17, no. 5-6, pp.
+  490--519, Apr. 1996. [Online]. Available:
+  \url{http://onlinelibrary.wiley.com/doi/10.1002/(SICI)1096-987X(199604)17:5/6<490::AID-JCC1>3.0.CO;2-P/abstract}
+\BIBentrySTDinterwordspacing
+
+\bibitem{amber}
+\BIBentryALTinterwordspacing
+J.~Wang, R.~M. Wolf, J.~W. Caldwell, P.~A. Kollman, and D.~A. Case,
+  ``\BIBforeignlanguage{en}{Development and testing of a general amber force
+  field},'' \emph{\BIBforeignlanguage{en}{J. Comput. Chem.}}, vol.~25, no.~9,
+  pp. 1157--1174, Jul. 2004. [Online]. Available:
+  \url{http://onlinelibrary.wiley.com/doi/10.1002/jcc.20035/abstract}
+\BIBentrySTDinterwordspacing
+
+\bibitem{unchanged}
+J.~W. Ponder and D.~A. Case, ``\BIBforeignlanguage{eng}{Force fields for
+  protein simulations},'' \emph{\BIBforeignlanguage{eng}{Adv. Protein Chem.}},
+  vol.~66, pp. 27--85, 2003.
+
+\bibitem{parm94}
+\BIBentryALTinterwordspacing
+W.~D. Cornell, P.~Cieplak, C.~I. Bayly, I.~R. Gould, K.~M. Merz, D.~M.
+  Ferguson, D.~C. Spellmeyer, T.~Fox, J.~W. Caldwell, and P.~A. Kollman, ``A
+  {Second} {Generation} {Force} {Field} for the {Simulation} of {Proteins},
+  {Nucleic} {Acids}, and {Organic} {Molecules},'' \emph{J. Am. Chem. Soc.},
+  vol. 117, no.~19, pp. 5179--5197, May 1995. [Online]. Available:
+  \url{http://dx.doi.org/10.1021/ja00124a002}
+\BIBentrySTDinterwordspacing
+
+\bibitem{tip4pew}
+\BIBentryALTinterwordspacing
+H.~W. Horn, W.~C. Swope, J.~W. Pitera, J.~D. Madura, T.~J. Dick, G.~L. Hura,
+  and T.~Head-Gordon, ``Development of an improved four-site water model for
+  biomolecular simulations: {TIP}4p-{Ew},'' \emph{The Journal of Chemical
+  Physics}, vol. 120, no.~20, pp. 9665--9678, May 2004. [Online]. Available:
+  \url{http://scitation.aip.org/content/aip/journal/jcp/120/20/10.1063/1.1683075}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

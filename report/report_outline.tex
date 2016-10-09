@@ -132,12 +132,15 @@ This document describes a collected set of best practices for computing various 
 \subsection{Background and related literature $\left(1.5 pages \pm 0.5 pages\right)$}
 \begin{itemize}
  \item Molecular dynamics force fields define how we construct the potential energy functions (and thereby the forces) of an atomistic system under study. The potential is constructed such that it is a function of solely the atomic coordinates and a set of parameters associated with the force field. Transferable force fields generally have three major parts: 
- \begin{itemize}
-  \item [1] The \textbf{functional forms} of the potential, i.e. the mathematical equations for the energy equation. A classic example of a non-bonded interaction form is the 12-6 Lennard-Jones potential.  
-  \item [2] \textbf{Atom types} which describe similar chemical environments such that we can assign different atoms identical parameters, thereby shrinking the parameter space and helping to avoid overfitting.
-  \item [3] \textbf{Parameters} that are associated with one or many atom types which determine the magnitude of the interactions in the system 
- \end{itemize}
- \item As alluded to earlier, there are severe limitations in current methods for force field parameterization. Until very recently, force fields have primarily been made manually guided by experimental and quantum chemical simulation data as well as the intuition of expert computational chemists.  
+  \begin{itemize}
+   \item [1] The \textbf{functional forms} of the potential, i.e. the mathematical equations for the energy equation. A classic example of a non-bonded interaction form is the 12-6 Lennard-Jones potential.  
+   \item [2] \textbf{Atom types} which describe similar chemical environments such that we can assign different atoms identical parameters, thereby shrinking the parameter space and helping to avoid overfitting.
+   \item [3] \textbf{Parameters} that are associated with one or many atom types which determine the magnitude of the interactions in the system 
+  \end{itemize}
+ \item As alluded to earlier, there are severe limitations in current methods for force field parameterization. Until very recently, force fields have primarily been made manually guided by experimental and quantum chemical simulation data as well as the intuition of expert computational chemists.\cite{charmm1,charmm2,mm2,mmff,amber} Many of the functional forms and parameters of these force fields also remain mostlyly unchanged due to the lack of clear systematic methods for updating them.\cite{unchanged} 
+ \item As stated previously, parameterization methods have slowly become more sophisticated over the last decade and a half. Many early biomolecule force fields were parameterized manually guided by chemical intuition, but force fields like AMBER \textit{parm94} showed intuitive departure by shrinking parameter space with clever atom typing.\cite{parm94} The parameterization of GAFF used a semi-automated genetic algorithm approach to select parameters.\cite{amber} Even more sophisticated optimization approaches such as least-squares optimization of an objective function have been utilized in creation of the TIP4P-Ew water model\cite{tip4pew} and in the ForceBalance parameterization scheme\cite{FB1,FB2,FB3}. Even with these more sophisticated optimization schemes there are still issues in needing to assign weights to different kinds of data (i.e. different properties) when they are included in the same objective. There are also possibilities of multiple optima in parameter space (i.e. different sets of parameters that all are consistent with data used during parameterization) and least-squares optimization does not discriminate the global optima from the other possibilities.           
+\end{itemize}
+
 \subsection{Methods $\left(1.5 pages \pm 0.5 pages\right)$}
 
 \subsection{Progress $\left(1.5 pages \pm 0.5 pages\right)$}
