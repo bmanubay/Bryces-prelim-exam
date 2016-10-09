@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  9 OCT 2016 17:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  9 OCT 2016 17:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1285,6 +1285,14 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count316
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2001/04/09 non-zero parskip adjustments
+
+
+LaTeX Warning: Command \@starttoc  has changed.
+               Check if current package is valid.
+
+)
 \c@comment=\count317
 Class revtex4-1 Info: colortbl package is loaded. (Proceeding with fingers cros
 sed.) on input line 98.
@@ -1543,9 +1551,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 131.
 
+[1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
 (Font)              scaled to size 10.0pt on input line 134.
-[1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
 (Font)              scaled to size 10.0pt on input line 143.
 
@@ -1613,13 +1621,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `en'. Using the pattern for
-** the default language instead.
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `en'. Using the pattern for
-** the default language instead.
 [3]
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
@@ -1641,13 +1649,13 @@ Package rerunfilecheck Info: File `report_outline.out' has not changed.
 (rerunfilecheck)             Checksum: D2549F0FCA1B87721BFA9CCD512BC899;637.
  ) 
 Here is how much of TeX's memory you used:
- 36697 strings out of 493013
- 709289 string characters out of 6133329
- 795860 words of memory out of 5000000
- 39470 multiletter control sequences out of 15000+600000
- 128139 words of font info for 202 fonts, out of 8000000 for 9000
+ 36690 strings out of 493013
+ 709101 string characters out of 6133329
+ 795622 words of memory out of 5000000
+ 39474 multiletter control sequences out of 15000+600000
+ 126617 words of font info for 193 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,8n,92p,10388b,961s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,8n,92p,10388b,947s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/sourcesanspro/a_5tbsmu.en
 c}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/sourcesanspro/a_ggs4wk.en
 c}</usr/local/texlive/2016/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSan
@@ -1658,10 +1666,10 @@ s/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy7.pfb>
-Output written on report_outline.pdf (4 pages, 177276 bytes).
+Output written on report_outline.pdf (4 pages, 177036 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
- 154 compressed objects within 2 object streams
+ 169 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
  36 named destinations out of 1000 (max. 500000)
  31813 words of extra memory for PDF output out of 35830 (max. 10000000)
 
