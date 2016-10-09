@@ -130,7 +130,14 @@ This document describes a collected set of best practices for computing various 
 
 
 \subsection{Background and related literature $\left(1.5 pages \pm 0.5 pages\right)$}
-
+\begin{itemize}
+ \item Molecular dynamics force fields define how we construct the potential energy functions (and thereby the forces) of an atomistic system under study. The potential is constructed such that it is a function of solely the atomic coordinates and a set of parameters associated with the force field. Transferable force fields generally have three major parts: 
+ \begin{itemize}
+  \item [1] The \textbf{functional forms} of the potential, i.e. the mathematical equations for the energy equation. A classic example of a non-bonded interaction form is the 12-6 Lennard-Jones potential.  
+  \item [2] \textbf{Atom types} which describe similar chemical environments such that we can assign different atoms identical parameters, thereby shrinking the parameter space and helping to avoid overfitting.
+  \item [3] \textbf{Parameters} that are associated with one or many atom types which determine the magnitude of the interactions in the system 
+ \end{itemize}
+ \item As alluded to earlier, there are severe limitations in current methods for force field parameterization. Until very recently, force fields have primarily been made manually guided by experimental and quantum chemical simulation data as well as the intuition of expert computational chemists.  
 \subsection{Methods $\left(1.5 pages \pm 0.5 pages\right)$}
 
 \subsection{Progress $\left(1.5 pages \pm 0.5 pages\right)$}
