@@ -193,4 +193,21 @@ H.~W. Horn, W.~C. Swope, J.~W. Pitera, J.~D. Madura, T.~J. Dick, G.~L. Hura,
   \url{http://scitation.aip.org/content/aip/journal/jcp/120/20/10.1063/1.1683075}
 \BIBentrySTDinterwordspacing
 
+\bibitem{bayes_imbalance}
+\BIBentryALTinterwordspacing
+K.~Klein, S.~Hennig, and S.~K. Paul, ``A {Bayesian} {Modelling} {Approach} with
+  {Balancing} {Informative} {Prior} for {Analysing} {Imbalanced} {Data},''
+  \emph{PLOS ONE}, vol.~11, no.~4, p. e0152700, Apr. 2016. [Online]. Available:
+  \url{http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0152700}
+\BIBentrySTDinterwordspacing
+
+\bibitem{bayes_coarse}
+\BIBentryALTinterwordspacing
+P.~N. Patrone, T.~W. Rosch, and F.~R.~P. Jr, ``Bayesian calibration of
+  coarse-grained forces: {Efficiently} addressing transferability,'' \emph{The
+  Journal of Chemical Physics}, vol. 144, no.~15, p. 154101, Apr. 2016.
+  [Online]. Available:
+  \url{http://scitation.aip.org/content/aip/journal/jcp/144/15/10.1063/1.4945380}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
