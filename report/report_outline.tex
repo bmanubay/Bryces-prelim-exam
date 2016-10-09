@@ -3,6 +3,15 @@
 \RequirePackage[final]{graphicx} % need to show figures in draft mode
 \documentclass[aps,pre,onecolumn,nofootinbib,superscriptaddress,12pt,draft,tightenlines,notitlepage]{revtex4-1}
 
+\setlength\topmargin{0pt}
+\addtolength\topmargin{-\headheight}
+\addtolength\topmargin{-\headsep}
+\setlength\oddsidemargin{0pt}
+\setlength\textwidth{\paperwidth}
+\addtolength\textwidth{-2in}
+\setlength\textheight{\paperheight}
+\addtolength\textheight{-2in}
+\usepackage{layout}
 
 % Change to a sans serif font.
 \usepackage{sourcesanspro}
@@ -37,7 +46,7 @@
 \usepackage{subcaption}
 \usepackage{titlesec}
 \usepackage{enumitem}
-\usepackage[margin=1.0in]{geometry}
+%\usepackage[margin=1.0in]{geometry}
 \setcitestyle{super}
 \setcounter{secnumdepth}{5}
 
@@ -69,7 +78,7 @@
 \graphicspath{{figures/}}
 \floatsetup[table]{capposition=top}
 \begin{document}
-
+\layout
 %\documentclass[a4paper,12pt]{article}
 %\usepackage[superscript,biblabel]{cite}
 %\begin{document}
