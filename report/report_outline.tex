@@ -29,7 +29,6 @@
 \makeatother
 
 %\linespread{0.956}
-
 \usepackage{listings} % For code examples
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \usepackage{amsmath}
@@ -47,6 +46,18 @@
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage[margin=1.0in]{geometry}
+\usepackage{etoolbox}
+\patchcmd{\section}
+  {\centering}
+  {\raggedright}
+  {}
+  {}
+\patchcmd{\subsection}
+  {\centering}
+  {\raggedright}
+  {}
+  {}
+
 \setcitestyle{super}
 \setcounter{secnumdepth}{5}
 
@@ -100,8 +111,8 @@
 % ABSTRACT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \maketitle
-\section{Outline}
-\subsection{Objectives $\left(0.5 pages\right)$}
+%section{Outline}
+\section{Objectives $\left(0.5 pages\right)$}
 \begin{itemize}
  \item Molecular dynamics (MD) simulation is fast becoming a more useful tool in many scientific studies.
  \item However, some limitations remain in the ability of MD force fields to accurately and transferably describe molecular environments.
@@ -111,7 +122,7 @@
  \item In this paper I will describe the overall parameterization framework and my roles in the project, first, collecting and organizing large amounts of high quality thermochemical data and, currently, investigating use of the Multistate Bennett Acceptance Ratio (MBAR) as a means to improve throughput by reducing simulation requirements during the parameterization process.      
 \end{itemize}
 
-\subsection{Significance $\left(0.5 pages\right)$}
+\section{Significance $\left(0.5 pages\right)$}
 \begin{itemize}
  \item A broad variety of research has been greatly impacted by the advent and improvement of MD simulation tools.  
   \begin{itemize}
@@ -127,7 +138,7 @@
 \end{itemize}
 
 
-\subsection{Background and related literature $\left(1.5 pages \pm 0.5 pages\right)$}
+\section{Background and related literature $\left(1.5 pages \pm 0.5 pages\right)$}
 \begin{itemize}
  \item Molecular dynamics force fields define how we construct the potential energy functions (and thereby the forces) of an atomistic system under study. The potential is constructed such that it is a function of solely the atomic coordinates and a set of parameters associated with the force field. Transferable force fields generally have three major parts: 
   \begin{itemize}
