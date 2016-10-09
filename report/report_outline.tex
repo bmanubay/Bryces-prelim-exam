@@ -1,7 +1,7 @@
 \RequirePackage{fix-cm}
 \RequirePackage[hyphens]{url}
 \RequirePackage[final]{graphicx} % need to show figures in draft mode
-\documentclass[aps,pre,nofootinbib,superscriptaddress,12pt,draft,tightenlines,notitlepage]{revtex4-1}
+\documentclass[prb,nofootinbib,superscriptaddress,12pt,tightenlines,notitlepage]{revtex4-1}
 
 \setlength\topmargin{0pt}
 \addtolength\topmargin{-\headheight}
@@ -113,30 +113,16 @@
 \maketitle
 %section{Outline}
 \section{Objectives $\left(0.5 pages\right)$}
-\begin{itemize}
- \item Molecular dynamics (MD) simulation is fast becoming a more useful tool in many scientific studies.
- \item However, some limitations remain in the ability of MD force fields to accurately and transferably describe molecular environments.
- \item Currently, force fields are parameterized with fixed functional forms with, often, poor physical motivation and require the chemical intuition of experts to manually correct parameters, leading to a more suitable product. Additionally, the creation of a transferable method to update existing force fields based on new experimental data is limited due to lack of understanding and lack of consistency in how the original parameterization was done 
- \item A possible solution to these problems is by recasting the force field parameterization process as a bayesian inference problem.
- \item The objective of this paper is introduce a framework for using high quality experimental data in order to automatically generate families of MD force fields consistent with the data used.
- \item In this paper I will describe the overall parameterization framework and my roles in the project, first, collecting and organizing large amounts of high quality thermochemical data and, currently, investigating use of the Multistate Bennett Acceptance Ratio (MBAR) as a means to improve throughput by reducing simulation requirements during the parameterization process.      
-\end{itemize}
+
+Molecular dynamics (MD) simulation is fast becoming a more useful tool in many scientific studies. However, some limitations remain in the ability of MD force fields to accurately and transferably describe molecular environments. Currently, force fields are parameterized with fixed functional forms with, often, poor physical motivation and require the chemical intuition of experts to manually correct parameters, leading to a more suitable product. Additionally, the creation of a transferable method to update existing force fields based on new experimental data is limited due to lack of understanding and lack of consistency in how the original parameterization was done.\\* 
+
+A possible solution to these problems is by recasting the force field parameterization process as a bayesian inference problem. The objective of this paper is introduce a framework for using high quality experimental data in order to automatically generate families of MD force fields consistent with the data used. In this paper I will describe the overall parameterization framework and my roles in the project, first, collecting and organizing large amounts of high quality thermochemical data and, currently, investigating use of the Multistate Bennett Acceptance Ratio (MBAR) as a means to improve throughput by reducing simulation requirements during the parameterization process.      
 
 \section{Significance $\left(0.5 pages\right)$}
-\begin{itemize}
- \item A broad variety of research has been greatly impacted by the advent and improvement of MD simulation tools.  
-  \begin{itemize}
-   \item Observing physical phenomena at a molecular scale (phase changes, ligand docking, etc.)\cite{villin}
-   \item Drug discovery and deisgn of new molecules\cite{drug_discov}
-  \end{itemize}
- \item The fundamental part of molecular simulation for describing the energetic interactions of a system is referred to as a force field, hence transferable and quantitatively accurate force fields are imperative for the use of molecular simulation tools to continue to proliferate.
-  \begin{itemize}
-   \item Transferability of MD force fields and particularly sets of parameters is an extremely popular topic (and current limitation) in the molecular simulation field.\cite{transferability1,transferability2,transferability3,transferability4} Transferability encourages use by providing convenience for scientists with wide arrays of research interests and simplifying the mystery that most observe force fields with.
-   \item Inaccurate and poorly parameterized force fields have been shown to grossly misrepresent molecular systems\cite{ffcomp1,ffcomp2}
-  \end{itemize}
- \item A few notable attempts, such as GAAMP and ForceBalance, have been made in recent years towards more automated and systematic force field parameterization methods.\cite{GAAMP,FB1,FB2,FB3} Each made important contributions to automated force field parameterization through clever use of objective function optimization, exploiting a variety of fitting data and allowing exploration of functional forms. However none provided the ability for the computer to automatically and systematically explore choices of fitting data, optimization algorithm and functional forms in order to objectively find families of force fields consistent with fitting data and reward those with the least model complexity.  
-\end{itemize}
 
+A broad variety of research has been greatly impacted by the advent and improvement of MD simulation tools. Observing physical phenomena such as protein folding dynamics and ligand docking at a molecular scale is widely studied using MD tools.\cite{villin} Drug discovery and deisgn of new pharmaceutical leads has also been made easier.\cite{drug_discov} The fundamental part of molecular simulation for describing the energetic interactions of a system is referred to as a force field, hence transferable and quantitatively accurate force fields are imperative for the use of molecular simulation tools to continue to proliferate.\\*
+
+Transferability of MD force fields and particularly sets of parameters is an extremely popular topic (and current limitation) in the molecular simulation field.\cite{transferability1,transferability2,transferability3,transferability4} Transferability encourages use by providing convenience for scientists with wide arrays of research interests and simplifying the mystery that most observe force fields with. Inaccurate and poorly parameterized force fields have been shown to grossly misrepresent molecular systems.\cite{ffcomp1,ffcomp2} A few notable attempts, such as GAAMP and ForceBalance, have been made in recent years towards more automated and systematic force field parameterization methods.\cite{GAAMP,FB1,FB2,FB3} Each made important contributions to automated force field parameterization through clever use of objective function optimization, exploiting a variety of fitting data and allowing exploration of functional forms. However none provided the ability for the computer to automatically and systematically explore choices of fitting data, optimization algorithm and functional forms in order to objectively find families of force fields consistent with fitting data and reward those with the least model complexity.  
 
 \section{Background and related literature $\left(1.5 pages \pm 0.5 pages\right)$}
 \begin{itemize}

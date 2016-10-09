@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  9 OCT 2016 16:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  9 OCT 2016 16:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -107,14 +107,16 @@ Class revtex4-1 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
 \@bibdataout=\write3
 \widetext@top=\box39
 \widetext@bot=\box40
-Class revtex4-1 Info: Selecting society aps on input line 7542.
+
+Class revtex4-1 Warning: No Society specified, using default society aps.
+
 (/usr/local/texlive/2016/texmf-dist/tex/latex/revtex/aps4-1.rtx
 File: aps4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for docu
 mentation)
 Class revtex4-1 Info: RevTeX society APS selected on input line 31.
 )
-Class revtex4-1 Info: Selecting journal pre on input line 7544.
-Class revtex4-1 Info: APS journal PRE selected on input line 7545.
+Class revtex4-1 Info: Selecting journal prb on input line 7544.
+Class revtex4-1 Info: APS journal PRB selected on input line 7545.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/revtex/aps12pt4-1.rtx
 File: aps12pt4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for 
@@ -137,8 +139,12 @@ Class revtex4-1 Info: Repairing natbib's \BibitemShut on input line 7549.
 Package: revsymb4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ f
 or documentation)
 LaTeX Info: Redefining \REV@mathfrak on input line 119.
-))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/layout.sty
+)
+
+Class revtex4-1 Warning: Citations are superscript numbers: footnotes must be e
+ndnotes; changing to that configuration.
+
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/tools/layout.sty
 Package: layout 2014/10/28 v1.2c Show layout parameters
 \oneinch=\count96
 \cnt@paperwidth=\count97
@@ -484,7 +490,6 @@ File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `draft' set `true' on input line 4362.
 Package hyperref Info: Option `colorlinks' set `true' on input line 4362.
 Package hyperref Info: Hyper figures OFF on input line 4486.
 Package hyperref Info: Link nesting OFF on input line 4491.
@@ -1366,11 +1371,8 @@ Package caption Info: floatrow package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count324
 \AtBeginShipoutBox=\box87
-
-
-Package hyperref Warning: Draft mode on.
-
 Package hyperref Info: Link coloring ON on input line 91.
+
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1382,12 +1384,25 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 91.
 LaTeX Info: Redefining \pageref on input line 91.
 LaTeX Info: Redefining \nameref on input line 91.
+
+(./report_outline.out) (./report_outline.out)
+\@outlinefile=\write5
+\openout5 = `report_outline.out'.
+
 LaTeX Info: Redefining \microtypecontext on input line 91.
-
-
-Package microtype Warning: `draft' option active.
-(microtype)                Disabling all micro-typographic extensions.
-(microtype)                This might lead to different line and page breaks.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `SourceSansPro-LF' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 
 ABD: EveryShipout initializing macros
 (/usr/local/texlive/2016/texmf-dist/tex/latex/beamer/translator/dicts/translato
@@ -1435,16 +1450,35 @@ Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 91.
 \openout3 = `report_outlineNotes.bib'.
 
 \c__siunitx_mathsf_int=\count326
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
 LaTeX Font Info:    Try loading font information for U+msa on input line 91.
+
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 91.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `cmss' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 \c__siunitx_mathtt_int=\count327
+Package microtype Info: Loading generic settings for font family
+(microtype)             `cmtt' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
 (Font)              scaled to size 14.4pt on input line 113.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
@@ -1455,38 +1489,139 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 113.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
 (Font)              scaled to size 10.95pt on input line 113.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 113.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 113.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
 (Font)              scaled to size 10.95pt on input line 115.
-LaTeX Font Info:    Try loading font information for OMS+SourceSansPro-LF on in
-put line 117.
-LaTeX Font Info:    No file OMSSourceSansPro-LF.fd. on input line 117.
 
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 115.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\left' on input line 115.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\right' on input line 115.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 115.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 121.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\left' on input line 121.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\right' on input line 121.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 121.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
+
+ []
+
+[1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 127.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\left' on input line 127.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\right' on input line 127.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 127.
+
+LaTeX Font Info:    Try loading font information for OMS+SourceSansPro-LF on in
+put line 129.
+LaTeX Font Info:    No file OMSSourceSansPro-LF.fd. on input line 129.
 
 LaTeX Font Warning: Font shape `OMS/SourceSansPro-LF/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 117.
+(Font)              for symbol `textbullet' on input line 129.
 
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 129.
-[1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(Font)              scaled to size 12.0pt on input line 131.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
-(Font)              scaled to size 12.0pt on input line 150.
+(Font)              scaled to size 12.0pt on input line 136.
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+
+ []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 144.
 
- []
 
-(./report_outline.bbl [3]
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\left' on input line 144.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\right' on input line 144.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 144.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\left' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\right' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 148.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\left' on input line 148.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\right' on input line 148.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 148.
+
+(./report_outline.bbl
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
@@ -1496,6 +1631,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--154
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `eng'. Using the pattern for
 ** the default language instead.
+[3]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
@@ -1508,7 +1644,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--154
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
-[4]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
@@ -1521,24 +1656,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--154
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `eng'. Using the pattern for
 ** the default language instead.
-) [5]
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 167.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 167.
+[4]) [5]
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 153.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
  (./report_outline.aux)
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 167.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 153.
+Package rerunfilecheck Info: File `report_outline.out' has not changed.
+(rerunfilecheck)             Checksum: DE660ECB6CE2E8D9050870074B492975;693.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 36349 strings out of 493013
- 699610 string characters out of 6133329
- 794527 words of memory out of 5000000
- 39377 multiletter control sequences out of 15000+600000
- 118714 words of font info for 81 fonts, out of 8000000 for 9000
+ 36716 strings out of 493013
+ 709303 string characters out of 6133329
+ 796512 words of memory out of 5000000
+ 39485 multiletter control sequences out of 15000+600000
+ 118376 words of font info for 198 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,8n,92p,10388b,966s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,6n,92p,10388b,979s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/sourcesanspro/a_5tbsmu.en
 c}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/sourcesanspro/a_ggs4wk.en
 c}</usr/local/texlive/2016/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSan
@@ -1550,12 +1687,11 @@ s/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts
 type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy8.pfb>
-Output written on report_outline.pdf (5 pages, 194234 bytes).
+/public/amsfonts/cm/cmsy8.pfb>
+Output written on report_outline.pdf (5 pages, 192532 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 180 PDF objects out of 1000 (max. 8388607)
+ 161 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 31309 words of extra memory for PDF output out of 35830 (max. 10000000)
 
