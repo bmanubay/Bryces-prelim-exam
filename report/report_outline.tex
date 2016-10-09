@@ -58,7 +58,7 @@
   {}
   {}
 
-\usepackage[parfill]{parskip}
+%\usepackage[parfill]{parskip}
 
 \setcitestyle{super}
 \setcounter{secnumdepth}{5}
@@ -90,6 +90,11 @@
 
 \graphicspath{{figures/}}
 \floatsetup[table]{capposition=top}
+
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
 \begin{document}
 %\layout
 %\documentclass[a4paper,12pt]{article}
@@ -112,9 +117,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \maketitle
 \section{Objectives $\left(0.5 pages\right)$}
-Molecular dynamics (MD) simulation is fast becoming a more useful tool in many scientific studies. However, some limitations remain in the ability of MD force fields to accurately and transferably describe molecular environments. Currently, force fields are parameterized with fixed functional forms with, often, poor physical motivation and require the chemical intuition of experts to manually correct parameters, leading to a more suitable product. Additionally, the creation of a transferable method to update existing force fields based on new experimental data is limited due to lack of understanding and lack of consistency in how the original parameterization was done.\\*
+Molecular dynamics (MD) simulation is fast becoming a more useful tool in many scientific studies. However, some limitations remain in the ability of MD force fields to accurately and transferably describe molecular environments. Currently, force fields are parameterized with fixed functional forms with, often, poor physical motivation and require the chemical intuition of experts to manually correct parameters, leading to a more suitable product. Additionally, the creation of a transferable method to update existing force fields based on new experimental data is limited due to lack of understanding and lack of consistency in how the original parameterization was done.
 
-A possible solution to these problems is by recasting the force field parameterization process as a bayesian inference problem. The objective of this paper is introduce a framework for using high quality experimental data in order to automatically generate families of MD force fields consistent with the data used. In this paper I will describe the overall parameterization framework and my roles in the project, first, collecting and organizing large amounts of high quality thermochemical data and, currently, investigating use of the Multistate Bennett Acceptance Ratio (MBAR) as a means to improve throughput by reducing simulation requirements during the parameterization process.\\*
+
+A possible solution to these problems is by recasting the force field parameterization process as a bayesian inference problem. The objective of this paper is introduce a framework for using high quality experimental data in order to automatically generate families of MD force fields consistent with the data used. In this paper I will describe the overall parameterization framework and my roles in the project, first, collecting and organizing large amounts of high quality thermochemical data and, currently, investigating use of the Multistate Bennett Acceptance Ratio (MBAR) as a means to improve throughput by reducing simulation requirements during the parameterization process.
 
 \section{Significance $\left(0.5 pages\right)$}
 A broad variety of research has been greatly impacted by the advent and improvement of MD simulation tools. Observing physical phenomena such as protein folding dynamics and ligand docking at a molecular scale is widely studied using MD tools.\cite{villin} Drug discovery and deisgn of new pharmaceutical leads has also been made easier.\cite{drug_discov} The fundamental part of molecular simulation for describing the energetic interactions of a system is referred to as a force field, hence transferable and quantitatively accurate force fields are imperative for the use of molecular simulation tools to continue to proliferate.\\*
