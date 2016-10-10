@@ -58,6 +58,8 @@
   {}
   {}
 
+\graphicspath{{/home/bmanubay/Bryces-prelim-exam/report/images/}}
+
 \usepackage{parskip}
 \setlength{\parskip}{4pt} % 1ex plus 0.5ex minus 0.2ex}
 \setlength{\parindent}{0pt}
@@ -90,7 +92,7 @@
         \renewcommand{\thefigure}{S\arabic{figure}}%
      }
 
-\graphicspath{{figures/}}
+%\graphicspath{{figures/}}
 \floatsetup[table]{capposition=top}
 
 \titlespacing\title{4pt}{12pt plus 4pt minus 2pt}{4pt plus 2pt minus 1pt}
@@ -141,7 +143,11 @@ As stated previously, parameterization methods have slowly become more sophistic
 Bayesian inference provides a robust statistical framework for force field parameterization. It has been shown that bayesian approaches can be applied to a wide variety of data driven sciences. It's been used for balancing data to help minimize influence of oversampled populations and generate more robust predictive models\cite{bayes_imbalance} to recalibrating initial force estimates in coarse grained MD models to target atomistic MD and experimental data\cite{bayes_coarse}. Baye's theorem clearly provides a framework for the problem at hand thusly:
 \begin{equation} P\left(\theta|D\right) \propto P\left(D|\theta\right) P\left(\theta\right)\end{equation}\\*
 In \textbf{Equation (1)} we consider a model $M$ (including functional forms and atom types) with some unknown set of parameters which produced data $D$. $\theta$ is a choice of parameters consistent with data $D$. What \textbf{equation (1)} tells us is that we can determine how probable $\theta$ is given $D$ (the \textit{posterior}) from the probability of observing $D$ given $\theta$ (the \textit{likelihood function}) and the  probability of $\theta$ which is imposed by physical constraint or by the previous round of inference (the \textit{prior}). Note that in iterative bayesian inference, the posterior of the previous round becomes the prior in the new iteration. This bayesian inference produces not just a single parameter set, but an entire posterior distribution of parameters given data. This is advantageous given we noted earlier that many different parameter sets can be consistent with the data used and the distribution of these consistent sets of parameters can inform what new data could help narrow the distribution and improve the parameter estimates. 
-
+ \begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Bayesian_inference_workflow}
+  \caption{A schematic overview of the bayesian inference workflow where we derive parameters from experimental data}
+ \end{figure}
   
 
 \subsection{Methods $\left(1.5 pages \pm 0.5 pages\right)$}
