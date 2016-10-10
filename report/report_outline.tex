@@ -145,7 +145,7 @@ Bayesian inference provides a robust statistical framework for force field param
 In \textbf{Equation (1)} we consider a model $M$ (including functional forms and atom types) with some unknown set of parameters which produced data $D$. $\theta$ is a choice of parameters consistent with data $D$. What \textbf{equation (1)} tells us is that we can determine how probable $\theta$ is given $D$ (the \textit{posterior}) from the probability of observing $D$ given $\theta$ (the \textit{likelihood function}) and the  probability of $\theta$ which is imposed by physical constraint or by the previous round of inference (the \textit{prior}). Note that in iterative bayesian inference, the posterior of the previous round becomes the prior in the new iteration. This bayesian inference produces not just a single parameter set, but an entire posterior distribution of parameters given data. This is advantageous given we noted earlier that many different parameter sets can be consistent with the data used and the distribution of these consistent sets of parameters can inform what new data could help narrow the distribution and improve the parameter estimates. 
  \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.5\textwidth]{Bayesian_inference_workflow}
+  \includegraphics[width=1.0\textwidth]{Bayesian_inference_workflow}
   \caption{A schematic overview of the bayesian inference workflow where we derive parameters from experimental data}
  \end{figure}
   
