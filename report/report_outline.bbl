@@ -85,6 +85,15 @@ F.~Mart{\'i}n-Garc{\'i}a, E.~Papaleo, P.~Gomez-Puertas, W.~Boomsma, and
   \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4374674/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{robustness}
+\BIBentryALTinterwordspacing
+K.~Vanommeslaeghe, M.~Yang, and A.~D. MacKerell,
+  ``\BIBforeignlanguage{en}{Robustness in the fitting of molecular mechanics
+  parameters},'' \emph{\BIBforeignlanguage{en}{J. Comput. Chem.}}, vol.~36,
+  no.~14, pp. 1083--1101, May 2015. [Online]. Available:
+  \url{http://onlinelibrary.wiley.com/doi/10.1002/jcc.23897/abstract}
+\BIBentrySTDinterwordspacing
+
 \bibitem{GAAMP}
 \BIBentryALTinterwordspacing
 L.~Huang and B.~Roux, ``Automated {Force} {Field} {Parameterization} for
