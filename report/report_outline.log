@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  10 OCT 2016 21:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  11 OCT 2016 00:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1546,55 +1546,56 @@ l.150  \end{figure}
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[2]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 153.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\left' on input line 153.
+(hyperref)                removing `math shift' on input line 154.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\right' on input line 153.
+(hyperref)                removing `\left' on input line 154.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 153.
+(hyperref)                removing `\right' on input line 154.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 155.
+(hyperref)                removing `math shift' on input line 154.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\left' on input line 155.
+(hyperref)                removing `math shift' on input line 156.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\right' on input line 155.
+(hyperref)                removing `\left' on input line 156.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 155.
+(hyperref)                removing `\right' on input line 156.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 157.
+(hyperref)                removing `math shift' on input line 156.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\left' on input line 157.
+(hyperref)                removing `math shift' on input line 158.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\right' on input line 157.
+(hyperref)                removing `\left' on input line 158.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 157.
+(hyperref)                removing `\right' on input line 158.
 
-(./report_outline.bbl [2]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 158.
+
+(./report_outline.bbl
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `eng'. Using the pattern for
 ** the default language instead.
@@ -1643,21 +1644,21 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ** loaded for the language `eng'. Using the pattern for
 ** the default language instead.
 [4]) [5]
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 162.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 162.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
  (./report_outline.aux)
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 162.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
 Package rerunfilecheck Info: File `report_outline.out' has not changed.
 (rerunfilecheck)             Checksum: 073552505CDEBEB1F2226DA6180A9B01;609.
  ) 
 Here is how much of TeX's memory you used:
- 36742 strings out of 493013
- 710357 string characters out of 6133329
- 796710 words of memory out of 5000000
- 39493 multiletter control sequences out of 15000+600000
- 129005 words of font info for 206 fonts, out of 8000000 for 9000
+ 36762 strings out of 493013
+ 710876 string characters out of 6133329
+ 796708 words of memory out of 5000000
+ 39497 multiletter control sequences out of 15000+600000
+ 130620 words of font info for 216 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,8n,92p,10388b,979s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,8n,92p,10388b,977s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/sourcesanspro/a_5tbsmu.en
 c}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/sourcesanspro/a_ggs4wk.en
 c}</usr/local/texlive/2016/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSan
@@ -1668,10 +1669,10 @@ s/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy7.pfb>
-Output written on report_outline.pdf (5 pages, 331287 bytes).
+Output written on report_outline.pdf (5 pages, 331846 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
- 166 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 500000)
+ 189 PDF objects out of 1000 (max. 8388607)
+ 170 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
  31818 words of extra memory for PDF output out of 35830 (max. 10000000)
 

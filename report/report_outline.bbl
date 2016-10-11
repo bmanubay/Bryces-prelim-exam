@@ -226,4 +226,13 @@ P.~N. Patrone, T.~W. Rosch, and F.~R.~P. Jr, ``Bayesian calibration of
   \url{http://scitation.aip.org/content/aip/journal/jcp/144/15/10.1063/1.4945380}
 \BIBentrySTDinterwordspacing
 
+\bibitem{mix}
+\BIBentryALTinterwordspacing
+E.~J.~W. Wensink, A.~C. Hoffmann, P.~J.~v. Maaren, and D.~v.~d. Spoel,
+  ``Dynamic properties of water/alcohol mixtures studied by computer
+  simulation,'' \emph{The Journal of Chemical Physics}, vol. 119, no.~14, pp.
+  7308--7317, Oct. 2003. [Online]. Available:
+  \url{http://scitation.aip.org/content/aip/journal/jcp/119/14/10.1063/1.1607918}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
