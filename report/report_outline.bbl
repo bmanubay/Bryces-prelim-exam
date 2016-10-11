@@ -30,6 +30,13 @@ G.~Jayachandran, V.~Vishal, and V.~S. Pande, ``Using massively parallel
   \url{http://scitation.aip.org/content/aip/journal/jcp/124/16/10.1063/1.2186317}
 \BIBentrySTDinterwordspacing
 
+\bibitem{villin2}
+K.~A. Beauchamp, D.~L. Ensign, R.~Das, and V.~S. Pande,
+  ``\BIBforeignlanguage{eng}{Quantitative comparison of villin headpiece
+  subdomain simulations and triplet-triplet energy transfer experiments},''
+  \emph{\BIBforeignlanguage{eng}{Proc. Natl. Acad. Sci. U.S.A.}}, vol. 108,
+  no.~31, pp. 12\,734--12\,739, Aug. 2011.
+
 \bibitem{drug_discov}
 \BIBentryALTinterwordspacing
 M.~De~Vivo, M.~Masetti, G.~Bottegoni, and A.~Cavalli, ``Role of {Molecular}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  10 OCT 2016 20:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  10 OCT 2016 21:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1527,7 +1527,7 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
 (Font)              scaled to size 10.0pt on input line 141.
 
 </home/bmanubay/Bryces-prelim-exam/report/images/Bayesian_inference_workflow.PN
-G, id=87, 625.58719pt x 218.31563pt>
+G, id=89, 625.58719pt x 218.31563pt>
 File: /home/bmanubay/Bryces-prelim-exam/report/images/Bayesian_inference_workfl
 ow.PNG Graphic file (type png)
 
@@ -1596,9 +1596,6 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 (./report_outline.bbl [2]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `en'. Using the pattern for
-** the default language instead.
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `eng'. Using the pattern for
 ** the default language instead.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
@@ -1608,10 +1605,19 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `en'. Using the pattern for
+** loaded for the language `eng'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `eng'. Using the pattern for
 ** the default language instead.
 [3 </home/bmanubay/Bryces-prelim-exam/report/images/Bayesian_inference_workflow
 .PNG>]
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
@@ -1645,11 +1651,11 @@ Package rerunfilecheck Info: File `report_outline.out' has not changed.
 (rerunfilecheck)             Checksum: 073552505CDEBEB1F2226DA6180A9B01;609.
  ) 
 Here is how much of TeX's memory you used:
- 36740 strings out of 493013
- 710408 string characters out of 6133329
+ 36742 strings out of 493013
+ 710357 string characters out of 6133329
  796710 words of memory out of 5000000
- 39489 multiletter control sequences out of 15000+600000
- 129240 words of font info for 208 fonts, out of 8000000 for 9000
+ 39493 multiletter control sequences out of 15000+600000
+ 129005 words of font info for 206 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,8n,92p,10388b,979s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/sourcesanspro/a_5tbsmu.en
@@ -1662,10 +1668,10 @@ s/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy7.pfb>
-Output written on report_outline.pdf (5 pages, 330965 bytes).
+Output written on report_outline.pdf (5 pages, 331287 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 500000)
+ 185 PDF objects out of 1000 (max. 8388607)
+ 166 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
  31818 words of extra memory for PDF output out of 35830 (max. 10000000)
 
