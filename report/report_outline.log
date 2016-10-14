@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  14 OCT 2016 14:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  14 OCT 2016 14:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1528,35 +1528,35 @@ l.237  \end{figure}
                    
 ? 
 [3 </home/bmanubay/Bryces-prelim-exam/report/images/Bayesian_inference_workflow
-.PNG>] [4]
-</home/bmanubay/Bryces-prelim-exam/report/images/ThermoML_workflow.PNG, id=125,
+.PNG>]
+</home/bmanubay/Bryces-prelim-exam/report/images/ThermoML_workflow.PNG, id=121,
  420.82219pt x 243.91125pt>
 File: /home/bmanubay/Bryces-prelim-exam/report/images/ThermoML_workflow.PNG Gra
 phic file (type png)
 
 <use /home/bmanubay/Bryces-prelim-exam/report/images/ThermoML_workflow.PNG>
 Package pdftex.def Info: /home/bmanubay/Bryces-prelim-exam/report/images/Thermo
-ML_workflow.PNG used on input line 270.
+ML_workflow.PNG used on input line 269.
 (pdftex.def)             Requested size: 211.3883pt x 122.52103pt.
 
-[5 </home/bmanubay/Bryces-prelim-exam/report/images/ThermoML_workflow.PNG>]
+[4 </home/bmanubay/Bryces-prelim-exam/report/images/ThermoML_workflow.PNG>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 304.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\left' on input line 304.
+(hyperref)                removing `math shift' on input line 303.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\right' on input line 304.
+(hyperref)                removing `\left' on input line 303.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 304.
+(hyperref)                removing `\right' on input line 303.
 
-(./report_outline.bbl [6]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 303.
+
+(./report_outline.bbl [5]
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
 (Font)              scaled to size 10.95pt on input line 28.
 
@@ -1581,7 +1581,7 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
-[7]
+[6]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
@@ -1606,20 +1606,20 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `eng'. Using the pattern for
 ** the default language instead.
-[8]) [9]
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 337.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 337.
+[7]) [8]
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 336.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 336.
  (./report_outline.aux)
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 337.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 336.
 Package rerunfilecheck Info: File `report_outline.out' has not changed.
 (rerunfilecheck)             Checksum: A0C15172029DBB265E84807773E2F0B1;609.
  ) 
 Here is how much of TeX's memory you used:
- 36888 strings out of 493013
- 713379 string characters out of 6133329
+ 36890 strings out of 493013
+ 713466 string characters out of 6133329
  798993 words of memory out of 5000000
  39568 multiletter control sequences out of 15000+600000
- 124419 words of font info for 239 fonts, out of 8000000 for 9000
+ 124742 words of font info for 241 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,7n,92p,10388b,999s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/sourcesanspro/a_5tbsmu.en
@@ -1636,10 +1636,10 @@ pe1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy7.pfb>
-Output written on report_outline.pdf (9 pages, 398592 bytes).
+Output written on report_outline.pdf (8 pages, 398190 bytes).
 PDF statistics:
- 247 PDF objects out of 1000 (max. 8388607)
- 217 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
+ 243 PDF objects out of 1000 (max. 8388607)
+ 214 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 500000)
  31319 words of extra memory for PDF output out of 35830 (max. 10000000)
 
