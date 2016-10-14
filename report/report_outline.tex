@@ -274,6 +274,17 @@ for use as evidence was sent to the the TRC for validation of quality. The likel
 with the evidence, thus accurate estimates are imperative. The TRC group led by Ken Kroenlein have internally kept estimates for uncertainties of all data points
 in ThermoML. Thus, their screening involves checking their uncertainty estimates against what authors published and noting any outliers. 
 
+\subsubsection{Exploring use of multistate reweighting to reduce computational expense}
+During each update of iterative bayesian inference, evaluation of the likelihood function will require new simulated evidence given a perturbed parameter set. However, with phase space overlap, new evidence at adjacent states can be estimated using multistate reweighting tools such as MBAR. \cite{MBAR} Given MBAR has a much higher computational efficiency that fully simulating a new state, this could greatly accelerate full construction of a posterior distribution of parameters. \textit{Equation 3} shown below is the formulation that allows for reduced free energies to be found at other states using a simulated state as reference, i.e. it allows for the solution of free energy differences.
+
+
+Where $u$ is a reduced potential energy, $x$ is a configuration, $K$ is the number of states and $N$ is the number of configurations from the state. These free energy calculations also allow for estimating expectation values of certain obserables at the other thermodynamic states for which relative free energies were calculated. This is done by calculating relative weights of the sampled state to the unsampled states using the formulations shown below in \textbf{equations 4,5 and 6}.
+
+
+Where $A(x_n)$ is some mechanical observable, $W_{na}$ is a weight and $\hat{A}$ is the estimated expectation of $A(x)$. 
+
+The goal of this exercise is to see how large of parameter perturbations can be made and still make accurate estimates of some observable at that new perturbed state. For this testing phase we've chosen a toy problem of using single molecule simulation observables, such as bond lengths and angles, as the evidence for verifying the validity of the bayesian inference process in the least computationally expensive manner. For testing the safe extent of parameter perturbation I have devised a simple scheme for comparison of reweighted observable estimates to a true sampled value. 
+
 
 
 
