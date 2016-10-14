@@ -280,7 +280,7 @@ for use as evidence was sent to the the TRC for validation of quality. The likel
 with the evidence, thus accurate estimates are imperative. The TRC group led by Ken Kroenlein have internally kept estimates for uncertainties of all data points
 in ThermoML. Thus, their screening involves checking their uncertainty estimates against what authors published and noting any outliers. 
 
-\subsubsection{Exploring use of multistate reweighting to reduce computational expense}
+\subsubsection{Exploring the use of multistate reweighting to reduce computational expense}
 During each update of iterative bayesian inference, evaluation of the likelihood function will require new simulated evidence given a perturbed parameter set. However, with phase space overlap, new evidence at adjacent states can be estimated using multistate reweighting tools such as MBAR. \cite{mbar} Given MBAR has a much higher computational efficiency that fully simulating a new state, this could greatly accelerate full construction of a posterior distribution of parameters. \textbf{Equation (2)} shown below is the formulation that allows for reduced free energies to be found at other states using a simulated state as reference, i.e. it allows for the solution of free energy differences.
 \begin{equation} \hat{f}_i = \sum_{j=1}^{k}\sum_{n=1}^{N_j} \frac{\exp\left[-u_{i}\left(x_{jn}\right)\right]}{\sum_{k=1}^{K} N_k \exp\left[\hat{f}_k - u_{k}\left(x_{jn}\right)\right]}\end{equation}\\*
 Where $u$ is a reduced potential energy, $x$ is a configuration, $K$ is the number of states and $N$ is the number of configurations from the state. These free energy calculations also allow for estimating expectation values of certain obserables at the other thermodynamic states for which relative free energies were calculated. This is done by calculating relative weights of the unsampled states to the sampled states using the formulations shown below in \textbf{equations (3),(4) and (5)}.
@@ -302,6 +302,8 @@ during every simulation.
 
 \subsection{Progress}
 \subsubsection{Data mining and curation of thermochemical data in ThermoML}
+Upon first inspections of the ThermoML database it became immediately clear that the data was extremely concentrated in certain properties for both 
+neat liquid properties and binary mixture properties. 
 \begin{figure}[h!]
 \centering
 \begin{subfigure}{.5\textwidth}
@@ -319,10 +321,69 @@ during every simulation.
 \caption{The distributions of data amongst neat liquid and binary mixture properties of interest}
 \label{fig:test}
 \end{figure}
-All the stats from the data mining shit
+As shown in \textbf{figure 3} the data is most concentrated in mass density. From their the amount of data per property exponentially decays
+until there is as little as a few dozen data points in certain properties. Initially, the OpenFF team (including myself, Michael Shirts, the 
+Mobley lab at UCI and the Chodera lab at MSKCC) thought that this could severely limit our ability to constrain parameters beyond those 
+associated with non-bonded interactions. However, after consultation with Chris Bayly we hypothesize that despite the lack of data in certain properties
+the chemical diversity in the data will allow us to fully constrain a large swath of parameter space.
 
-Potential figure from results of jump tests
+Considering the three chemical classes (or environments) of the AlkEthOH set (alkanes, ethers and alcohols) the number of unique molecules per chemical class is quite balanced 
+across both neat liquid and binary mixture properties of interest. Additionally, it was determined that although the total amount of available data per chemical class is unbalanced, it is still quite ample (especially when considering the binary mixture property data). \textbf{Figure 4(a) and 4(b)} illustrate these
+points, respectively.
+\begin{figure}[h!]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{types_per_chemistry}
+  \caption{Chemical diversity per class}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{data_per_chemistry}
+  \caption{Data available per class}
+  \label{fig:sub2}
+\end{subfigure}
+\caption{The two figures show that the chemical diversity per class in the AlkEthOH set is relatively balanced and that the amount of data available in each class is large}
+\label{fig:test}
+\end{figure}
 
+A point of interest that came up during this search of the ThermoML database is that although the AlkEthOH set is useful in the beginning stages
+of verifying the bayesian parameterization process by shrinking the parameter space, it extremely limits the chemical diversity and amount of 
+data that is available. One of the other searches that I did was on the full amount and diversity of data available for most conceivable organic
+species. For this search I expanded the atom filter in \textit{ThermoPyL} to allow other common organic atoms (such as S, N, B, P, F, Cl, Br and I) to
+pass, removed the bond order restrictions and kept the liquid phase filter. The results showed an extremely large and diverse set of data available when
+compared to the results of the AlkEthOH filter. Statistics are shown in \textbf{3(a)}. Additionally, another statistic I considered was the number 
+of molecules with at least certain numbers of pure solvent \textbf{and} binary mixture properties available. The statistics are shown in \textbf{figure 3(b)}. 
+Given this statistic there may be a limiting amount of data available to constrain parameter space across the full chemical diversity of the AlkEthOH set, 
+however it should be much less of an issue when considering a larger chemical space. The issue then becomes dealing with a much larger and more 
+complex parameter space.
+\begin{figure}[h!]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{Molecules_per_property}
+  \caption{Unique molecules per property}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{Coupled_property_coverage}
+  \caption{Coupled property coverage}
+  \label{fig:sub2}
+\end{subfigure}
+\caption{The two figures show that there is an extreme diversity of molecular coverage available in the total ThermoML database and that the full organic liquid data availavle has a much better chance of well constraining parameter space when compared to the AlkEthOH set}
+\label{fig:test}
+\end{figure}
+
+\subsubsection{Exploring the use of multistate reweighting to reduce computational expense}
+Despite the amount of time spent exploring the safe magnitude of parameter changes that result in accurate reweighted estimates of bond length and angle 
+observables, results are still inconclusive. It was originally hypothesized that the allowable percent changes in bond or angle force constants were 
+propotional to the percent of the molecule that was affected by the parameter change (i.e. how many instances of the atom type changed occur in the molecule).
+However, while this is true of many of the molecules tested, it is not true for all of them. I will have to continue expanding the atom types being 
+investigated in order to get a more conclusive result of how the percent change in parameter and proportion of the molecule affected by the change relate. 
+Additionally, I hypothesize that the allowed changes in geometric parameters such as minimum bond length and equilibrium angle will not be percents, but will
+be bounded by constraints of molecular geometry. This has yet to be tested though. 
 
 \subsection{Research plan}
 Short-term the trajectory of the research plan is quite clear. The first thing to be done is to finish developing general guidelines for the allowed magnitude

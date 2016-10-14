@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  14 OCT 2016 14:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  14 OCT 2016 15:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1313,7 +1313,68 @@ Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 105
 Class revtex4-1 Info: cite was not loaded (OK!) on input line 105.
 Class revtex4-1 Info: mcite was not loaded (OK!) on input line 105.
 Class revtex4-1 Info: multicol was not loaded (OK!) on input line 105.
-(./report_outline.aux)
+(./report_outline.aux
+
+LaTeX Warning: Label `fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub1@cref' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub1@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub2@cref' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub2@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:test' multiply defined.
+
+
+LaTeX Warning: Label `fig:test@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub1@cref' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub1@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub2@cref' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub2@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:test' multiply defined.
+
+
+LaTeX Warning: Label `fig:test@cref' multiply defined.
+
+)
 \openout1 = `report_outline.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
@@ -1333,8 +1394,7 @@ LaTeX Font Info:    ... okay on input line 105.
 LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 105.
 LaTeX Font Info:    Try loading font information for LY1+ptm on input line 105.
 
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/ly1/ly1ptm.fd
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/ly1/ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
 LaTeX Font Info:    ... okay on input line 105.
@@ -1511,7 +1571,7 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
 (Font)              scaled to size 10.0pt on input line 187.
 
 </home/bmanubay/Bryces-prelim-exam/report/images/Bayesian_inference_workflow.PN
-G, id=94, 625.58719pt x 218.31563pt>
+G, id=98, 625.58719pt x 218.31563pt>
 File: /home/bmanubay/Bryces-prelim-exam/report/images/Bayesian_inference_workfl
 ow.PNG Graphic file (type png)
 
@@ -1529,7 +1589,7 @@ l.237  \end{figure}
 ? 
 [3 </home/bmanubay/Bryces-prelim-exam/report/images/Bayesian_inference_workflow
 .PNG>]
-</home/bmanubay/Bryces-prelim-exam/report/images/ThermoML_workflow.PNG, id=125,
+</home/bmanubay/Bryces-prelim-exam/report/images/ThermoML_workflow.PNG, id=129,
  420.82219pt x 243.91125pt>
 File: /home/bmanubay/Bryces-prelim-exam/report/images/ThermoML_workflow.PNG Gra
 phic file (type png)
@@ -1540,29 +1600,98 @@ ML_workflow.PNG used on input line 269.
 (pdftex.def)             Requested size: 211.3883pt x 122.52103pt.
 
 [4 </home/bmanubay/Bryces-prelim-exam/report/images/ThermoML_workflow.PNG>]
-</home/bmanubay/Bryces-prelim-exam/report/images/Pure_data_counts.png, id=143, 
+</home/bmanubay/Bryces-prelim-exam/report/images/Pure_data_counts.png, id=147, 
 406.51875pt x 381.425pt>
 File: /home/bmanubay/Bryces-prelim-exam/report/images/Pure_data_counts.png Grap
 hic file (type png)
 
 <use /home/bmanubay/Bryces-prelim-exam/report/images/Pure_data_counts.png>
 Package pdftex.def Info: /home/bmanubay/Bryces-prelim-exam/report/images/Pure_d
-ata_counts.png used on input line 309.
+ata_counts.png used on input line 311.
 (pdftex.def)             Requested size: 211.3883pt x 198.33632pt.
 
 </home/bmanubay/Bryces-prelim-exam/report/images/Mixture_data_counts.png, id=14
-4, 406.51875pt x 376.40625pt>
+8, 406.51875pt x 376.40625pt>
 File: /home/bmanubay/Bryces-prelim-exam/report/images/Mixture_data_counts.png G
 raphic file (type png)
 
 <use /home/bmanubay/Bryces-prelim-exam/report/images/Mixture_data_counts.png>
 Package pdftex.def Info: /home/bmanubay/Bryces-prelim-exam/report/images/Mixtur
-e_data_counts.png used on input line 315.
+e_data_counts.png used on input line 317.
 (pdftex.def)             Requested size: 211.3883pt x 195.72662pt.
+
+! You can't use `\vadjust' in vertical mode.
+<argument> \vadjust 
+                    {\do@output@cclv {\@add@float }}\@Esphack 
+l.323 \end{figure}
+                  
+? 
+
+</home/bmanubay/Bryces-prelim-exam/report/images/types_per_chemistry.png, id=14
+9, 402.50375pt x 345.29pt>
+File: /home/bmanubay/Bryces-prelim-exam/report/images/types_per_chemistry.png G
+raphic file (type png)
+
+<use /home/bmanubay/Bryces-prelim-exam/report/images/types_per_chemistry.png>
+Package pdftex.def Info: /home/bmanubay/Bryces-prelim-exam/report/images/types_
+per_chemistry.png used on input line 337.
+(pdftex.def)             Requested size: 211.3883pt x 181.3379pt.
+
+</home/bmanubay/Bryces-prelim-exam/report/images/data_per_chemistry.png, id=150
+, 442.65375pt x 345.29pt>
+File: /home/bmanubay/Bryces-prelim-exam/report/images/data_per_chemistry.png Gr
+aphic file (type png)
+
+<use /home/bmanubay/Bryces-prelim-exam/report/images/data_per_chemistry.png>
+Package pdftex.def Info: /home/bmanubay/Bryces-prelim-exam/report/images/data_p
+er_chemistry.png used on input line 343.
+(pdftex.def)             Requested size: 211.3883pt x 164.89432pt.
 
 [5 </home/bmanubay/Bryces-prelim-exam/report/images/Pure_data_counts.png> </hom
 e/bmanubay/Bryces-prelim-exam/report/images/Mixture_data_counts.png>]
-(./report_outline.bbl
+! You can't use `\vadjust' in vertical mode.
+<argument> \vadjust 
+                    {\do@output@cclv {\@add@float }}\@Esphack 
+l.349 \end{figure}
+                  
+? 
+
+</home/bmanubay/Bryces-prelim-exam/report/images/Molecules_per_property.png, id
+=158, 388.45125pt x 442.65375pt>
+File: /home/bmanubay/Bryces-prelim-exam/report/images/Molecules_per_property.pn
+g Graphic file (type png)
+
+<use /home/bmanubay/Bryces-prelim-exam/report/images/Molecules_per_property.png
+>
+Package pdftex.def Info: /home/bmanubay/Bryces-prelim-exam/report/images/Molecu
+les_per_property.png used on input line 365.
+(pdftex.def)             Requested size: 211.3883pt x 240.8869pt.
+
+</home/bmanubay/Bryces-prelim-exam/report/images/Coupled_property_coverage.png,
+ id=159, 394.47375pt x 401.5pt>
+File: /home/bmanubay/Bryces-prelim-exam/report/images/Coupled_property_coverage
+.png Graphic file (type png)
+
+<use /home/bmanubay/Bryces-prelim-exam/report/images/Coupled_property_coverage.
+png>
+Package pdftex.def Info: /home/bmanubay/Bryces-prelim-exam/report/images/Couple
+d_property_coverage.png used on input line 371.
+(pdftex.def)             Requested size: 211.3883pt x 215.15263pt.
+
+! You can't use `\vadjust' in vertical mode.
+<argument> \vadjust 
+                    {\do@output@cclv {\@add@float }}\@Esphack 
+l.377 \end{figure}
+                  
+? 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6 </home/bmanubay/Bryces-prelim-exam/report/images/types_per_chemistry.png> </
+home/bmanubay/Bryces-prelim-exam/report/images/data_per_chemistry.png>]
+[7 </home/bmanubay/Bryces-prelim-exam/report/images/Molecules_per_property.png>
+ </home/bmanubay/Bryces-prelim-exam/report/images/Coupled_property_coverage.png
+>] (./report_outline.bbl
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
 (Font)              scaled to size 10.95pt on input line 28.
 
@@ -1581,13 +1710,13 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `eng'. Using the pattern for
 ** the default language instead.
-[6]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
+[8]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
@@ -1612,22 +1741,26 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `eng'. Using the pattern for
 ** the default language instead.
-[7]) [8]
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 354.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 354.
+[9]) [10]
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 415.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 415.
  (./report_outline.aux)
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 354.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 415.
 Package rerunfilecheck Info: File `report_outline.out' has not changed.
-(rerunfilecheck)             Checksum: 2D1DCF16114DDEE602E2A66DC933771D;701.
+(rerunfilecheck)             Checksum: 340CE8D45423A8F1DBC5AFDC8BB4EAEF;840.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 36920 strings out of 493013
- 714441 string characters out of 6133329
+ 36950 strings out of 493013
+ 715977 string characters out of 6133329
  798993 words of memory out of 5000000
- 39594 multiletter control sequences out of 15000+600000
- 124742 words of font info for 241 fonts, out of 8000000 for 9000
+ 39612 multiletter control sequences out of 15000+600000
+ 125065 words of font info for 243 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,8n,92p,10388b,979s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,9n,92p,10388b,999s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/sourcesanspro/a_5tbsmu.en
 c}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/sourcesanspro/a_ggs4wk.en
 c}</usr/local/texlive/2016/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSan
@@ -1642,10 +1775,10 @@ pe1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy7.pfb>
-Output written on report_outline.pdf (8 pages, 423609 bytes).
+Output written on report_outline.pdf (10 pages, 495799 bytes).
 PDF statistics:
- 253 PDF objects out of 1000 (max. 8388607)
- 220 compressed objects within 3 object streams
- 55 named destinations out of 1000 (max. 500000)
- 31337 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 275 PDF objects out of 1000 (max. 8388607)
+ 232 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
+ 31365 words of extra memory for PDF output out of 35830 (max. 10000000)
 
