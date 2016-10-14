@@ -190,6 +190,15 @@ J.~W. Ponder and D.~A. Case, ``\BIBforeignlanguage{eng}{Force fields for
   protein simulations},'' \emph{\BIBforeignlanguage{eng}{Adv. Protein Chem.}},
   vol.~66, pp. 27--85, 2003.
 
+\bibitem{mm1}
+\BIBentryALTinterwordspacing
+N.~L. Allinger, M.~T. Tribble, M.~A. Miller, and D.~H. Wertz, ``Conformational
+  analysis. {LXIX}. {Improved} force field for the calculation of the
+  structures and energies of hydrocarbons,'' \emph{J. Am. Chem. Soc.}, vol.~93,
+  no.~7, pp. 1637--1648, Apr. 1971. [Online]. Available:
+  \url{http://dx.doi.org/10.1021/ja00736a012}
+\BIBentrySTDinterwordspacing
+
 \bibitem{parm94}
 \BIBentryALTinterwordspacing
 W.~D. Cornell, P.~Cieplak, C.~I. Bayly, I.~R. Gould, K.~M. Merz, D.~M.
@@ -224,15 +233,6 @@ P.~N. Patrone, T.~W. Rosch, and F.~R.~P. Jr, ``Bayesian calibration of
   Journal of Chemical Physics}, vol. 144, no.~15, p. 154101, Apr. 2016.
   [Online]. Available:
   \url{http://scitation.aip.org/content/aip/journal/jcp/144/15/10.1063/1.4945380}
-\BIBentrySTDinterwordspacing
-
-\bibitem{mix}
-\BIBentryALTinterwordspacing
-E.~J.~W. Wensink, A.~C. Hoffmann, P.~J.~v. Maaren, and D.~v.~d. Spoel,
-  ``Dynamic properties of water/alcohol mixtures studied by computer
-  simulation,'' \emph{The Journal of Chemical Physics}, vol. 119, no.~14, pp.
-  7308--7317, Oct. 2003. [Online]. Available:
-  \url{http://scitation.aip.org/content/aip/journal/jcp/119/14/10.1063/1.1607918}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}
