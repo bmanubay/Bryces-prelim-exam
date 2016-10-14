@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  14 OCT 2016 11:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  14 OCT 2016 11:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1568,12 +1568,12 @@ phic file (type png)
 
 <use /home/bmanubay/Bryces-prelim-exam/report/images/ThermoML_workflow.PNG>
 Package pdftex.def Info: /home/bmanubay/Bryces-prelim-exam/report/images/Thermo
-ML_workflow.PNG used on input line 265.
+ML_workflow.PNG used on input line 269.
 (pdftex.def)             Requested size: 211.3883pt x 122.52103pt.
 
 [3 </home/bmanubay/Bryces-prelim-exam/report/images/Bayesian_inference_workflow
-.PNG> </home/bmanubay/Bryces-prelim-exam/report/images/ThermoML_workflow.PNG>]
-[4]
+.PNG>] [4 </home/bmanubay/Bryces-prelim-exam/report/images/ThermoML_workflow.PN
+G>]
 LaTeX Font Info:    Try loading font information for OMS+SourceSansPro-LF on in
 put line 302.
 LaTeX Font Info:    No file OMSSourceSansPro-LF.fd. on input line 302.
@@ -1625,21 +1625,15 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `eng'. Using the pattern for
 ** the default language instead.
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `en'. Using the pattern for
-** the default language instead.
 [5]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `eng'. Using the pattern for
 ** the default language instead.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `eng'. Using the pattern for
-** the default language instead.
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `en'. Using the pattern for
-** the default language instead.
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `en'. Using the pattern for
 ** the default language instead.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
@@ -1654,6 +1648,12 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
 [6]
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
@@ -1680,12 +1680,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
  ) 
 Here is how much of TeX's memory you used:
  36894 strings out of 493013
- 713564 string characters out of 6133329
+ 713561 string characters out of 6133329
  796993 words of memory out of 5000000
  39572 multiletter control sequences out of 15000+600000
  124830 words of font info for 241 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,7n,92p,10388b,965s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,7n,92p,10388b,959s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/sourcesanspro/a_5tbsmu.en
 c}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/sourcesanspro/a_ggs4wk.en
 c}</usr/local/texlive/2016/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSan
@@ -1700,10 +1700,10 @@ pe1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy7.pfb>
-Output written on report_outline.pdf (7 pages, 395410 bytes).
+Output written on report_outline.pdf (7 pages, 395526 bytes).
 PDF statistics:
- 237 PDF objects out of 1000 (max. 8388607)
- 209 compressed objects within 3 object streams
+ 236 PDF objects out of 1000 (max. 8388607)
+ 208 compressed objects within 3 object streams
  51 named destinations out of 1000 (max. 500000)
  31319 words of extra memory for PDF output out of 35830 (max. 10000000)
 
