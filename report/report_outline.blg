@@ -9,51 +9,49 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: report_outlineNotes.bib
 Database file #2: report_outline.bib
-Warning--I didn't find a database entry for "MBAR"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 27 entries,
+You've used 28 entries,
             4087 wiz_defined-function locations,
-            1023 strings with 14756 characters,
-and the built_in function-call counts, 28503 in all, are:
-= -- 2411
-> -- 786
-< -- 288
-+ -- 454
-- -- 155
-* -- 1589
-:= -- 4187
-add.period$ -- 54
-call.type$ -- 27
-change.case$ -- 26
+            1028 strings with 14926 characters,
+and the built_in function-call counts, 29032 in all, are:
+= -- 2461
+> -- 795
+< -- 290
++ -- 458
+- -- 157
+* -- 1619
+:= -- 4291
+add.period$ -- 56
+call.type$ -- 28
+change.case$ -- 27
 chr.to.int$ -- 636
-cite$ -- 27
-duplicate$ -- 1881
-empty$ -- 1888
-format.name$ -- 163
-if$ -- 6562
+cite$ -- 28
+duplicate$ -- 1924
+empty$ -- 1928
+format.name$ -- 166
+if$ -- 6677
 int.to.chr$ -- 0
-int.to.str$ -- 27
-missing$ -- 322
-newline$ -- 150
-num.names$ -- 27
-pop$ -- 617
+int.to.str$ -- 28
+missing$ -- 330
+newline$ -- 155
+num.names$ -- 28
+pop$ -- 630
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2130
+skip$ -- 2172
 stack$ -- 0
-substring$ -- 1598
-swap$ -- 1858
-text.length$ -- 76
+substring$ -- 1599
+swap$ -- 1891
+text.length$ -- 78
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 27
+type$ -- 28
 warning$ -- 0
-while$ -- 118
-width$ -- 29
-write$ -- 382
-(There was 1 warning)
+while$ -- 119
+width$ -- 30
+write$ -- 395

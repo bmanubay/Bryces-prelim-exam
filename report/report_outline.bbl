@@ -254,4 +254,12 @@ E.~J.~W. Wensink, A.~C. Hoffmann, P.~J.~v. Maaren, and D.~v.~d. Spoel,
   \url{http://scitation.aip.org/content/aip/journal/jcp/119/14/10.1063/1.1607918}
 \BIBentrySTDinterwordspacing
 
+\bibitem{mbar}
+\BIBentryALTinterwordspacing
+M.~R. Shirts and J.~D. Chodera, ``Statistically optimal analysis of samples
+  from multiple equilibrium states,'' \emph{J Chem Phys}, vol. 129, no.~12,
+  Sep. 2008. [Online]. Available:
+  \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2671659/}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
