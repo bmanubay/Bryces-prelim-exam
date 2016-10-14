@@ -258,7 +258,9 @@ might affect the constraint of parameter space one must simply think intuitively
 density for a bulk liquid is determined by the volume of the system and therefore the space between molecules. Therefore, the most important parameters for 
 this simulated quantity would be for those describing the non-bonded interactions between molecules. As a counterexample consider the static dielectric constant, 
 which is a function of the system dipole moment or more generally electrostatics. Clearly, accurately simulating this property would require constraints placed 
-on some electrostatic potential and potentially parameters controlling harmonic bond potential.
+on some electrostatic potential and potentially parameters controlling harmonic bond potential. Additional neat liquid data on heat of vaporization was 
+collected, but it was decided not to be included as evidence in the initial test. While heat of vaporization is a common property to parameterize to it was 
+decided that because we are parameterizing a purely liquid force field, phase change properties might only serve to complicate the process. This data will be kept to check the accuracy of the force field in simulating this property for a wide array of chemistries. 
 \clearpage
 
 \begin{wrapfigure}[13]{r}{0.5\textwidth}
@@ -292,36 +294,16 @@ of a reweighted estimate: $\left(1\right)$ the estimated uncertainty of the esti
 sampled value. These success criteria are motivated for the fact that: $\left(1\right)$ the MBAR estimate and bootstrapped uncertainties should converge with 
 sufficient phase space overlap and $\left(2\right)$ the simulated distributions of bond lengths and angles are Gaussian. 
 
-
 Since one of my criteria for accurate reweighting is the estimated observable being within a certain number of standard deviations from the true sampled value, many simulations with perturbed force field parameters had to be run. Using ten selected molecules from the AlkEthOH set, I have run $~2900$
 single molecule simulations for use as evidence. Simulations were carried out using the OpenMM simulation suite. Each simulation was carried out at 
 $300 K$ held constant for a total of $200 ps$ each in an $NVT$ ensemble. The system was integrated with Langevin dynamics and $100$ snapshots were recorded 
 during every simulation.
 
-
-\begin{itemize}
- \item Data Mining and curation from ThermoML
-  \begin{itemize}
-   \item ThermoPyL
-   \item Filtering algorithm(s)
-   \item Some stats on total database
-   \item AlkEthOH
-  \end{itemize}
- \item Reweighting workflow to determine length of jumps allowable in parameter space
-  \begin{itemize}
-   \item Purpose of reweighting workflow
-   \item Brief overview of MBAR maybe
-   \item Criteria for safe jump and motivation behind that
-   \item Simulations ran
-  \end{itemize}
-\end{itemize}  
+\subsection{Progress $\left(1.5 pages \pm 0.5 pages\right)$}
 All the stats from the data mining shit
 
 Potential figure from results of jump tests
 
-
-
-\subsection{Progress $\left(1.5 pages \pm 0.5 pages\right)$}
 
 \subsection{Research plan $\left(0.5 pages\right)$}
 
