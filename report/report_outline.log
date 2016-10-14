@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  14 OCT 2016 16:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  14 OCT 2016 16:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1580,16 +1580,18 @@ w.PNG>
 Package pdftex.def Info: /home/bmanubay/Bryces-prelim-exam/report/images/Bayesi
 an_inference_workflow.PNG used on input line 235.
 (pdftex.def)             Requested size: 469.75502pt x 163.9395pt.
- [2]
+
 ! You can't use `\vadjust' in vertical mode.
 <argument> \vadjust 
                     {\do@output@cclv {\@add@float }}\@Esphack 
 l.237  \end{figure}
                    
 ? 
-[3 </home/bmanubay/Bryces-prelim-exam/report/images/Bayesian_inference_workflow
-.PNG>]
-</home/bmanubay/Bryces-prelim-exam/report/images/ThermoML_workflow.PNG, id=129,
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2]
+</home/bmanubay/Bryces-prelim-exam/report/images/ThermoML_workflow.PNG, id=121,
  420.82219pt x 243.91125pt>
 File: /home/bmanubay/Bryces-prelim-exam/report/images/ThermoML_workflow.PNG Gra
 phic file (type png)
@@ -1599,7 +1601,9 @@ Package pdftex.def Info: /home/bmanubay/Bryces-prelim-exam/report/images/Thermo
 ML_workflow.PNG used on input line 269.
 (pdftex.def)             Requested size: 211.3883pt x 122.52103pt.
 
-[4 </home/bmanubay/Bryces-prelim-exam/report/images/ThermoML_workflow.PNG>]
+[3 </home/bmanubay/Bryces-prelim-exam/report/images/Bayesian_inference_workflow
+.PNG>] [4 </home/bmanubay/Bryces-prelim-exam/report/images/ThermoML_workflow.PN
+G>]
 </home/bmanubay/Bryces-prelim-exam/report/images/Pure_data_counts.png, id=147, 
 406.51875pt x 381.425pt>
 File: /home/bmanubay/Bryces-prelim-exam/report/images/Pure_data_counts.png Grap
@@ -1744,11 +1748,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 36949 strings out of 493013
- 715967 string characters out of 6133329
+ 36946 strings out of 493013
+ 715787 string characters out of 6133329
  797993 words of memory out of 5000000
- 39611 multiletter control sequences out of 15000+600000
- 125065 words of font info for 243 fonts, out of 8000000 for 9000
+ 39612 multiletter control sequences out of 15000+600000
+ 124514 words of font info for 240 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,9n,92p,10388b,1003s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/sourcesanspro/a_5tbsmu.en
@@ -1765,7 +1769,7 @@ pe1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy7.pfb>
-Output written on report_outline.pdf (10 pages, 495524 bytes).
+Output written on report_outline.pdf (10 pages, 493500 bytes).
 PDF statistics:
  275 PDF objects out of 1000 (max. 8388607)
  232 compressed objects within 3 object streams

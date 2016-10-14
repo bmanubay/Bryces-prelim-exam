@@ -128,7 +128,7 @@
 
 
 \section{Objectives}
-Molecula  dynamics (MD) simulation is fast becoming a more useful tool in many scientific studies. 
+Molecular dynamics (MD) simulation is fast becoming a more useful tool in many scientific studies. 
 However, some limitations remain in the ability of MD force fields to accurately and transferably 
 describe molecular environments. Many popular and currently used force fields were parameterized 
 with fixed functional forms which, often, have poor physical motivation. The chemical intuition of 
@@ -144,7 +144,7 @@ used. In this paper I will generally describe the overall parameterization frame
 thus far. First, collecting and curating large amounts of high quality experimental thermochemical data 
 and, currently, investigating use of the Multistate Bennett Acceptance Ratio (MBAR) as a means to improve 
 parameterization throughput by reducing computational expense while making updates to the posterior distribution 
-of parameter sets consistent with experimental data provided.
+of parameter sets consistent with experimental evidence.
 
 \section{Significance}
 A broad variety of research from drug discovery to metallurgy has been greatly impacted by the advent and 
@@ -244,7 +244,7 @@ required for the parameterization process using MBAR to estimate simulated prope
 \subsection{Methods}
 \subsubsection{Data mining and curation of thermochemical data in ThermoML}
 The experimental thermochemical data to be used for the parameterization process was collected from the NIST ThermoML database managed by the 
-Thermodynamics Research Center at the  NIST Boulder campus. In order to explore the composition of the data in ThermoML I used the \textit{ThermoPyL}
+Thermodynamics Research Center (TRC) at the NIST Boulder campus. In order to explore the composition of the data in ThermoML I used the \textit{ThermoPyL}
 Python tool developed by the Chodera lab at the Memorial Sloan Kettering Cancer Center (MSKCC).\cite{thermopyl} The \textit{ThermoPyL} tool parses the
 standard ThermoML XML format into a Pandas dataframe format. Further filters can be applied to the dataframes to filter by chemical composition, 
 properties of thermodynamic state such as temperature or pressure, as well as thermochemical properties available.
@@ -259,7 +259,7 @@ might affect the constraint of parameter space one must simply think intuitively
 density for a bulk liquid is determined by the volume of the system and therefore the space between molecules. Therefore, the most important parameters for 
 this simulated quantity would be for those describing the non-bonded interactions between molecules. As a counterexample consider the static dielectric constant, 
 which is a function of the system dipole moment or more generally electrostatics. Clearly, accurately simulating this property would require constraints placed 
-on heat of vaporization was 
+on electrostatic interaction parameters or bonded parameters given dipoles are also affected by bond distance. Heat of vaporization was 
 collected, but it was decided not to be included as evidence in the initial test. While heat of vaporization is a common property to parameterize to it was 
 decided that because we are parameterizing a purely liquid force field, phase change properties might only serve to complicate the process. This data will 
 be kept to check the accuracy of the force field in simulating this property for a wide array of chemistries. 
@@ -272,24 +272,24 @@ be kept to check the accuracy of the force field in simulating this property for
 A flow diagram representing the filtering process is shown in \textbf{figure 2}. The process is started by organizing a locally stored version of the 
 ThermoML database into a Pandas dataframe. First, a filter is applied to discard journal articles with known erroneous data. Next, we filter all data if it doesn't 
 fall within our previous properties of interest list. Filters for chemical composition and bond order are next applied, specifically it was decided that for initial 
-testing to only look at organics containing C, O and/or H atoms with single or aromatic bonding. Additionally, the molecules had another filter that they must appear
+testing to only look at organics containing C, O and/or H atoms with single or aromatic bonding. Additionally, the molecules had another filter such that they must appear
 in a diverse list of alkanes, ethers and alcohols (coined AlkEthOH) that was constructed by Chris Bayly of OpenEye Software. AlkEthOH represents a limited test set
 to validate the machinery for parameterization. Finally, only data with temperatures  
-250 - 400 K and pressures 1 - 1000 atm are kept in the liquid phase are kept. The data is then saved in an easily machine-readable format such as JSON or PKL. Additionally, potential data 
+250 - 400 K and pressures 1 - 1000 atm, in the liquid phase, are kept. The data is then saved in an easily machine-readable format such as JSON or PKL. Additionally, potential data 
 for use as evidence was sent to the the TRC for validation of quality. The likelihood function described earlier will be a function of uncertainties associated
 with the evidence, thus accurate estimates are imperative. The TRC group led by Ken Kroenlein have internally kept estimates for uncertainties of all data points
 in ThermoML. Thus, their screening involves checking their uncertainty estimates against what authors published and noting any outliers. 
 
 \subsubsection{Exploring the use of multistate reweighting to reduce computational expense}
-During each update of iterative bayesian inference, evaluation of the likelihood function will require new simulated evidence given a perturbed parameter set. However, with phase space overlap, new evidence at adjacent states can be estimated using multistate reweighting tools such as MBAR. \cite{mbar} Given MBAR has a much higher computational efficiency that fully simulating a new state, this could greatly accelerate full construction of a posterior distribution of parameters. \textbf{Equation (2)} shown below is the formulation that allows for reduced free energies to be found at other states using a simulated state as reference, i.e. it allows for the solution of free energy differences.
+During each update of iterative bayesian inference, evaluation of the likelihood function will require new simulated evidence given a perturbed parameter set. However, with sufficient phase space overlap, new evidence at adjacent states can be estimated using multistate reweighting tools such as MBAR. \cite{mbar} MBAR has a much higher computational efficiency than fully simulating a new state, thus this could greatly accelerate full construction of a posterior distribution of parameters. \textbf{Equation (2)} shown below is the formulation that allows for reduced free energies to be found at other states using a simulated state as reference, i.e. it allows for the solution of free energy differences.
 \begin{equation} \hat{f}_i = \sum_{j=1}^{k}\sum_{n=1}^{N_j} \frac{\exp\left[-u_{i}\left(x_{jn}\right)\right]}{\sum_{k=1}^{K} N_k \exp\left[\hat{f}_k - u_{k}\left(x_{jn}\right)\right]}\end{equation}\\*
-Where $u$ is a reduced potential energy, $x$ is a configuration, $K$ is the number of states and $N$ is the number of configurations from the state. These free energy calculations also allow for estimating expectation values of certain obserables at the other thermodynamic states for which relative free energies were calculated. This is done by calculating relative weights of the unsampled states to the sampled states using the formulations shown below in \textbf{equations (3),(4) and (5)}.
+Where $u$ is a reduced potential energy, $x$ is a configuration, $K$ is the number of states and $N$ is the number of configurations from the state. These free energy calculations also allow for estimating expectation values of observables at the other thermodynamic states for which relative free energies were calculated. This is done by calculating relative weights of the unsampled states to the sampled states using the formulations shown below in \textbf{equations (3),(4) and (5)}.
 \begin{equation} W_{na} = \hat{c}_{a}^{-1} \frac{\exp\left[-u\left(x_{n}\right)\right]}{\sum_{k=1}^{K} N_k \exp\left[\hat{f}_k - u_{k}\left(x_{n}\right)\right]}\end{equation}
 \begin{equation} \hat{c}_a = \sum_{n=1}^{N} \frac{\exp\left[-u\left(x_{n}\right)\right]}{\sum_{k=1}^{K} N_k \exp\left[\hat{f}_k - u_{k}\left(x_{n}\right)\right]}\end{equation}
 \begin{equation} \hat{A} = \sum_{n=1}^{N} W_{na} A\left(x_n\right)\end{equation}
 Where $A(x)$ is some mechanical observable, $W_{na}$ is a weight and $\hat{A}$ is the estimated expectation of $A(x)$. 
 
-The goal of this exercise is to see how large of parameter perturbations can be made and still make accurate estimates of some observable at that new perturbed state. For this testing phase I chose a toy problem of using single molecule simulation observables, such as bond lengths and angles, as the evidence for verifying the validity of the bayesian inference process in the least computationally expensive manner. For testing the safe extent of parameter perturbation I have devised a simple scheme for comparison of reweighted observable estimates to a true sampled value. I created a reweighting script using the Python implementation
+The goal of this exercise is to see how large of parameter perturbations can be made and still make accurate estimates of some observable at that new perturbed state. For this testing phase we use a toy problem of with single molecule simulation observables, such as bond lengths and angles, as the evidence for verifying the validity of the bayesian inference process in the least computationally expensive manner. For testing the safe extent of parameter perturbation I have devised a simple scheme for comparison of reweighted observable estimates to a true sampled value. I created a reweighting script using the Python implementation
 of MBAR called \textit{pymbar} in order to make estimates of observables at new parameter states. I decided on two criteria for assessing the accuracy
 of a reweighted estimate: $\left(1\right)$ the estimated uncertainty of the estimated expectation of an observable must be within $20 \%$ of a bootstraped uncertainty estimate with 100 samples and $\left(2\right)$ the estimated value of the observable being calculated must be within $2$ standard deviations of the true
 sampled value. These success criteria are motivated for the fact that: $\left(1\right)$ the MBAR estimate and bootstrapped uncertainties should converge with 
@@ -297,7 +297,7 @@ sufficient phase space overlap and $\left(2\right)$ the simulated distributions 
 
 Since one of my criteria for accurate reweighting is the estimated observable being within a certain number of standard deviations from the true sampled value, many simulations with perturbed force field parameters had to be run. Using ten selected molecules from the AlkEthOH set, I have run $~2900$
 single molecule simulations for use as evidence. Simulations were carried out using the OpenMM simulation suite. Each simulation was carried out at 
-$300 K$ held constant for a total of $200 ps$ each in an $NVT$ ensemble. The system was integrated with Langevin dynamics and $100$ snapshots were recorded 
+$300 K$ for a total of $200 ps$ each in an $NVT$ ensemble. The system was integrated with Langevin dynamics and $100$ snapshots were recorded 
 during every simulation.
 
 \subsection{Progress}
@@ -321,7 +321,7 @@ neat liquid properties and binary mixture properties.
 \caption{The distributions of data amongst neat liquid and binary mixture properties of interest}
 \label{fig:test}
 \end{figure}
-As shown in \textbf{figure 3} the data is most concentrated in mass density. From their the amount of data per property exponentially decays
+As shown in \textbf{figure 3} the data is most concentrated in mass density. The amount of data per property exponentially decays
 until there is as little as a few dozen data points in certain properties. Initially, the OpenFF team (including myself, Michael Shirts, the 
 Mobley lab at UCI and the Chodera lab at MSKCC) thought that this could severely limit our ability to constrain parameters beyond those 
 associated with non-bonded interactions. However, after consultation with Chris Bayly we hypothesize that despite the lack of data in certain properties
