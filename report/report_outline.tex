@@ -275,6 +275,11 @@ to validate the machinery for parameterization. Finally, only data with temperat
 for use as evidence was sent to the the TRC for validation of quality. The likelihood function described earlier will be a function of uncertainties associated
 with the evidence, thus accurate estimates are imperative. The TRC group led by Ken Kroenlein have internally kept estimates for uncertainties of all data points
 in ThermoML. Thus, their screening involves checking their uncertainty estimates against what authors published and noting any outliers. 
+\begin{wrapfigure}{r}{0.5\textwidth}
+ \centering
+ \includegraphics[width=0.9\textwidth]{ThermoML_workflow}
+ \caption{A simplified diagram of the filtering algorithm used to find experimental data for use as evidence}
+\end{wrapfigure}
 
 \subsubsection{Exploring use of multistate reweighting to reduce computational expense}
 During each update of iterative bayesian inference, evaluation of the likelihood function will require new simulated evidence given a perturbed parameter set. However, with phase space overlap, new evidence at adjacent states can be estimated using multistate reweighting tools such as MBAR. \cite{mbar} Given MBAR has a much higher computational efficiency that fully simulating a new state, this could greatly accelerate full construction of a posterior distribution of parameters. \textbf{Equation (2)} shown below is the formulation that allows for reduced free energies to be found at other states using a simulated state as reference, i.e. it allows for the solution of free energy differences.
