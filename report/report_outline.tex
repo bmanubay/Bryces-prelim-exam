@@ -241,7 +241,42 @@ required for the parameterization process using MBAR to estimate simulated prope
 \subsection{Methods $\left(1.5 pages \pm 0.5 pages\right)$}
 \subsubsection{Data mining and curation of thermochemical data in ThermoML}
 The experimental thermochemical data to be used for the parameterization process was collected from the NIST ThermoML database managed by the 
-Thermodynamics Research Center at NIST Boulder campus.  
+Thermodynamics Research Center at the  NIST Boulder campus. In order to explore the composition of the data in ThermoML I used the \textit{ThermoPyL}
+Python tool developed by the Chodera lab at the Memorial Sloan Kettering Cancer Center.\cite{thermopyl} The \textit{ThermoPyL} tool parses the
+standard ThermoML XML format into a Pandas dataframe format. Further filters can be applied to the dataframes to filter by chemical composition, 
+properties of thermodynamic state such as temperature or pressure, as well as thermochemical properties available.
+
+The first planned novel use of the bayesian parameterization procedure is to parameterize a general force field for simulating small organic liquids
+and their mixtures. Other than being a concrete test case with readily available experimental data, this choice is motivated by shortcomings of current
+force fields to accurately describe organic liquid mixtures (and particularly excess properties).\cite{mix} Given this apparent problem the properties
+selected to be used in the pool of potential evidence were chosen for the purpose of more fully constraining parameter space with the goal of being 
+able to accurately simulate properties of organic liquid mixtures. The properties chosen from neat liquid data were mass density, isobaric heat capacity, 
+speed of sound and static dielectric constant. The properties chosen from the binary mixture data were mass density, speed of sound, static dielectric constant, excess molar volume, excess molar isobaric heat capacity, excess molar enthalpy and infinite dilution activity coefficients. To consider how these properties
+might affect the constraint of parameter space one must simply think intuitively about the physics. First, consider mass density. Ultimately, the value of mass 
+density for a bulk liquid is determined by the volume of the system and therefore the space between molecules. Therefore, the most important parameters for 
+this simulated quantity would be for those describing the non-bonded interactions between molecules. As a counterexample consider the static dielectric constant, 
+which is a function of the system dipole moment or more generally electrostatics. Clearly, accurately simulating this property would require constraints placed 
+on some electrostatic potential and potentially parameters controlling harmonic bond potential.
+
+\begin{wrapfigure}{R}{0.4\textwidth}
+\centering
+\includegraphics[width=0.35\textwidth]{ThermoML_workflow}
+\caption{\label{fig:thermoml}A simplified diagram of the filtering algorithm used to find experimental data for use as evidence.}
+\end{wrapfigure}
+A flow diagram representing the filtering process is shown in \textbf{figure 2}. The process is started by organizing a locally stored version of the 
+ThermoML database into a Pandas dataframe. First, a filter is applied to discard journal articles with known erroneous data. Next, we filter all data if it doesn't 
+fall within our previous properties of interest list. Filters for chemical composition and bond order are next applied, specifically it was decided that for initial 
+testing to only look at organics containing C, O and/or H atoms with single or aromatic bonding. Additionally, the molecules had another filter that they must appear
+in a diverse list of alkanes, ethers and alcohols (coined AlkEthOH) that was constructed by Chris Bayly of OpenEye Software. AlkEthOH represents a limited test set 
+to validate the machinery for parameterization. Finally, only data with temperatures  
+250 - 400 K and pressures 1 - 1000 atm are kept in the liquid phase are kept. The data is then saved in an easily machine-readable format such as JSON or PKL. Additionally, potential data 
+for use as evidence was sent to the the TRC for validation of quality. The likelihood function described earlier will be a function of uncertainties associated
+with the evidence, thus accurate estimates are imperative. The TRC group led by Ken Kroenlein have internally kept estimates for uncertainties of all data points
+in ThermoML. Thus, their screening involves checking their uncertainty estimates against what authors published and noting any outliers. 
+
+
+
+
 \begin{itemize}
  \item Data Mining and curation from ThermoML
   \begin{itemize}
