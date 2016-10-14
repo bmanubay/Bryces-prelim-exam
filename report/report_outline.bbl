@@ -262,4 +262,14 @@ M.~R. Shirts and J.~D. Chodera, ``Statistically optimal analysis of samples
   \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2671659/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{mapping}
+\BIBentryALTinterwordspacing
+H.~Paliwal and M.~R. Shirts, ``Multistate reweighting and configuration mapping
+  together accelerate the efficiency of thermodynamic calculations as a
+  function of molecular geometry by orders of magnitude,'' \emph{The Journal of
+  Chemical Physics}, vol. 138, no.~15, p. 154108, Apr. 2013. [Online].
+  Available:
+  \url{http://scitation.aip.org/content/aip/journal/jcp/138/15/10.1063/1.4801332}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

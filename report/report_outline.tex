@@ -178,7 +178,7 @@ project, one of the potential uses of the parameterization scheme is to fill in 
 data. With updated general descriptions of chemical space and property data on chemically similar compounds, this parameterization
 process should provide force fields to accurately simulate property data for which no experimental data exists. 
 
-\section{Background and related literature $\left(1.5 pages \pm 0.5 pages\right)$}
+\section{Background and related literature}
 Molecular dynamics force fields define how to construct the potential energy functions (and thereby the forces) 
 of an atomistic system under study. The potential is constructed such that it is a function of solely the atomic 
 coordinates and a set of parameters associated with the force field. Transferable force fields generally have 
@@ -228,7 +228,8 @@ of observing $D$ given $\theta$ (the \textit{likelihood function}) and the proba
 iterative bayesian inference, the posterior of the previous round becomes the prior in the new iteration. This bayesian 
 inference produces not just a single parameter set, but an entire posterior distribution of parameters given data. This is advantageous 
 given that many different parameter sets can be consistent with the data used and the distribution of these consistent 
-sets of parameters can inform what new data could help narrow the distribution and improve the parameter estimates. 
+sets of parameters can inform what new data could help narrow the distribution and improve the parameter estimates. An overview
+of the parameterizatoin workflow is shown in \textbf{figure 1}. 
  \begin{figure}[h!]
   \centering
   \includegraphics[width=1.0\textwidth]{Bayesian_inference_workflow}
@@ -240,11 +241,11 @@ problem of gathering, categorizing and curating large amounts of experimental th
 bayesian inference scheme. The second part will discuss how to address decreasing the computational expense of the simulations
 required for the parameterization process using MBAR to estimate simulated properties at new parameter states.  
 
-\subsection{Methods $\left(1.5 pages \pm 0.5 pages\right)$}
+\subsection{Methods}
 \subsubsection{Data mining and curation of thermochemical data in ThermoML}
 The experimental thermochemical data to be used for the parameterization process was collected from the NIST ThermoML database managed by the 
 Thermodynamics Research Center at the  NIST Boulder campus. In order to explore the composition of the data in ThermoML I used the \textit{ThermoPyL}
-Python tool developed by the Chodera lab at the Memorial Sloan Kettering Cancer Center.\cite{thermopyl} The \textit{ThermoPyL} tool parses the
+Python tool developed by the Chodera lab at the Memorial Sloan Kettering Cancer Center (MSKCC).\cite{thermopyl} The \textit{ThermoPyL} tool parses the
 standard ThermoML XML format into a Pandas dataframe format. Further filters can be applied to the dataframes to filter by chemical composition, 
 properties of thermodynamic state such as temperature or pressure, as well as thermochemical properties available.
 
@@ -264,7 +265,7 @@ decided that because we are parameterizing a
 \clearpage
 purely liquid force field, phase change properties might only serve to complicate the process. This data will be kept to check the accuracy of the force field in simulating this property for a wide array of chemistries. 
 
-\begin{wrapfigure}[13]{r}{0.5\textwidth}
+\begin{wrapfigure}[15]{r}{0.5\textwidth}
  \centering
  \includegraphics[width=0.9\textwidth]{ThermoML_workflow}
  \caption{A simplified diagram of the filtering algorithm used to find experimental data for use as evidence}
@@ -306,10 +307,31 @@ All the stats from the data mining shit
 Potential figure from results of jump tests
 
 
-\subsection{Research plan $\left(0.5 pages\right)$}
+\subsection{Research plan}
+Short-term the trajectory of the research plan is quite clear. The first thing to be done is to finish developing general guidelines for the allowed magnitude
+of parameter changes that will result in accurate reweighted estimates of bond length and angle observables. Once the guidelines are clear they are to be 
+used in testing the bayesian inference machinery using single molecule observables as evidence. The concept for the test is as follows:
+\begin{itemize}
+ \item [1] Simulate distributions of bond lengths and angles using a correct original force field. This will be our evidence.
+ \item [2] Perturb the force field to have clearly wrong or unphysical parameters.
+ \item [3] Using the bayesian updating scheme, attempt to iteratively determine a set of parameters which reproduces the original evidence
+\end{itemize}
+Currently the bayesian sampling machinery is being developed my members of the Mobley lab at UCI and the Chodera lab at MSKCC. Depending on the results of the
+guidline development for allowable parameter changes, it may be necessary to explore configurational mapping as a means to accurately calculate free energy differences between non-overlapping states.\cite{mapping} The goal is to have this toy project finished by the end of the Fall 2016 semester. 
+
+Long-term we would like to implement the bayesian inference parameterization procedure using the experimental thermochemical data I curated as evidence. 
+Currently the property calculation API, which will both implement calculation of expectation values of mechanical observables from simulation data and 
+handle how the experimental data and uncertainties are used, is being developed by John Chodera at MSKCC. As part of my work thus far I have compiled 
+a review document summarizing various methods for calculating thermochemical properties of interest from simulation data. The document summarizes numerical
+and analytical techniques for calculating observables, characterization of uncertainty as well as recommendations on corrections to be included in some
+calculations and when it is most appropriate to use them. Once the skeleton of the API is finished, I will be adding many of these calculation methods and
+testing them in order to publish an article on benchmarking different calculation methods for a varied set of thermochemical observables. Ultimately, one of
+the main goals of this project is to develop software to allow other scientists to easily parameterize high quality MD force fields from avavilable experimental
+ data. The goal of this benchmarking project is to create guidelines to be put in the API recommending options for calculation methods and corrections to be 
+added that will guide other scientists should they use the parameterization software. The goal is to have this mostly complete by my first committee meeting 
+next year.   
 
 \bibliographystyle{IEEEtran}
 \bibliography{report_outline}
 
 \end{document}
-\RequirePackage{fix-cm}
