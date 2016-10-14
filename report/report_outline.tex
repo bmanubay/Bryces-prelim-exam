@@ -260,11 +260,11 @@ this simulated quantity would be for those describing the non-bonded interaction
 which is a function of the system dipole moment or more generally electrostatics. Clearly, accurately simulating this property would require constraints placed 
 on some electrostatic potential and potentially parameters controlling harmonic bond potential.
 
-\begin{wrapfigure}{R}{0.5\textwidth}
- \centering
- \includegraphics[width=0.9\textwidth]{ThermoML_workflow}
- \caption{A simplified diagram of the filtering algorithm used to find experimental data for use as evidence}
-\end{wrapfigure}
+%\begin{wrapfigure}{R}{0.5\textwidth}
+% \centering
+% \includegraphics[width=0.9\textwidth]{ThermoML_workflow}
+% \caption{A simplified diagram of the filtering algorithm used to find experimental data for use as evidence}
+%\end{wrapfigure}
 A flow diagram representing the filtering process is shown in \textbf{figure 2}. The process is started by organizing a locally stored version of the 
 ThermoML database into a Pandas dataframe. First, a filter is applied to discard journal articles with known erroneous data. Next, we filter all data if it doesn't 
 fall within our previous properties of interest list. Filters for chemical composition and bond order are next applied, specifically it was decided that for initial 
