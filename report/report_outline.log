@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  14 OCT 2016 14:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  14 OCT 2016 14:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1511,7 +1511,7 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
 (Font)              scaled to size 10.0pt on input line 187.
 
 </home/bmanubay/Bryces-prelim-exam/report/images/Bayesian_inference_workflow.PN
-G, id=90, 625.58719pt x 218.31563pt>
+G, id=94, 625.58719pt x 218.31563pt>
 File: /home/bmanubay/Bryces-prelim-exam/report/images/Bayesian_inference_workfl
 ow.PNG Graphic file (type png)
 
@@ -1529,7 +1529,7 @@ l.237  \end{figure}
 ? 
 [3 </home/bmanubay/Bryces-prelim-exam/report/images/Bayesian_inference_workflow
 .PNG>]
-</home/bmanubay/Bryces-prelim-exam/report/images/ThermoML_workflow.PNG, id=121,
+</home/bmanubay/Bryces-prelim-exam/report/images/ThermoML_workflow.PNG, id=125,
  420.82219pt x 243.91125pt>
 File: /home/bmanubay/Bryces-prelim-exam/report/images/ThermoML_workflow.PNG Gra
 phic file (type png)
@@ -1540,23 +1540,29 @@ ML_workflow.PNG used on input line 269.
 (pdftex.def)             Requested size: 211.3883pt x 122.52103pt.
 
 [4 </home/bmanubay/Bryces-prelim-exam/report/images/ThermoML_workflow.PNG>]
+</home/bmanubay/Bryces-prelim-exam/report/images/Pure_data_counts.png, id=143, 
+406.51875pt x 381.425pt>
+File: /home/bmanubay/Bryces-prelim-exam/report/images/Pure_data_counts.png Grap
+hic file (type png)
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 303.
+<use /home/bmanubay/Bryces-prelim-exam/report/images/Pure_data_counts.png>
+Package pdftex.def Info: /home/bmanubay/Bryces-prelim-exam/report/images/Pure_d
+ata_counts.png used on input line 309.
+(pdftex.def)             Requested size: 211.3883pt x 198.33632pt.
 
+</home/bmanubay/Bryces-prelim-exam/report/images/Mixture_data_counts.png, id=14
+4, 406.51875pt x 376.40625pt>
+File: /home/bmanubay/Bryces-prelim-exam/report/images/Mixture_data_counts.png G
+raphic file (type png)
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\left' on input line 303.
+<use /home/bmanubay/Bryces-prelim-exam/report/images/Mixture_data_counts.png>
+Package pdftex.def Info: /home/bmanubay/Bryces-prelim-exam/report/images/Mixtur
+e_data_counts.png used on input line 315.
+(pdftex.def)             Requested size: 211.3883pt x 195.72662pt.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\right' on input line 303.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 303.
-
-(./report_outline.bbl [5]
+[5 </home/bmanubay/Bryces-prelim-exam/report/images/Pure_data_counts.png> </hom
+e/bmanubay/Bryces-prelim-exam/report/images/Mixture_data_counts.png>]
+(./report_outline.bbl
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
 (Font)              scaled to size 10.95pt on input line 28.
 
@@ -1575,13 +1581,13 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `eng'. Using the pattern for
 ** the default language instead.
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `en'. Using the pattern for
-** the default language instead.
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `en'. Using the pattern for
-** the default language instead.
 [6]
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
@@ -1607,21 +1613,21 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
 ** loaded for the language `eng'. Using the pattern for
 ** the default language instead.
 [7]) [8]
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 336.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 336.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 354.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 354.
  (./report_outline.aux)
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 336.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 354.
 Package rerunfilecheck Info: File `report_outline.out' has not changed.
-(rerunfilecheck)             Checksum: A0C15172029DBB265E84807773E2F0B1;609.
+(rerunfilecheck)             Checksum: 2D1DCF16114DDEE602E2A66DC933771D;701.
  ) 
 Here is how much of TeX's memory you used:
- 36890 strings out of 493013
- 713466 string characters out of 6133329
- 798993 words of memory out of 5000000
- 39568 multiletter control sequences out of 15000+600000
+ 36921 strings out of 493013
+ 714452 string characters out of 6133329
+ 797993 words of memory out of 5000000
+ 39595 multiletter control sequences out of 15000+600000
  124742 words of font info for 241 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,7n,92p,10388b,999s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,8n,92p,10388b,979s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/sourcesanspro/a_5tbsmu.en
 c}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/sourcesanspro/a_ggs4wk.en
 c}</usr/local/texlive/2016/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSan
@@ -1636,10 +1642,10 @@ pe1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy7.pfb>
-Output written on report_outline.pdf (8 pages, 398190 bytes).
+Output written on report_outline.pdf (8 pages, 423608 bytes).
 PDF statistics:
- 243 PDF objects out of 1000 (max. 8388607)
- 214 compressed objects within 3 object streams
- 53 named destinations out of 1000 (max. 500000)
- 31319 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 253 PDF objects out of 1000 (max. 8388607)
+ 220 compressed objects within 3 object streams
+ 55 named destinations out of 1000 (max. 500000)
+ 31337 words of extra memory for PDF output out of 35830 (max. 10000000)
 
