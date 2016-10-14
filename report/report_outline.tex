@@ -12,6 +12,8 @@
 \setlength\textheight{\paperheight}
 \addtolength\textheight{-2in}
 \usepackage{layout}
+\setlength{\abovedisplayskip}{4pt}
+\setlength{\belowdisplayskip}{4pt}
 
 % Change to a sans serif font.
 \usepackage{sourcesanspro}
@@ -275,7 +277,7 @@ with the evidence, thus accurate estimates are imperative. The TRC group led by 
 in ThermoML. Thus, their screening involves checking their uncertainty estimates against what authors published and noting any outliers. 
 
 \subsubsection{Exploring use of multistate reweighting to reduce computational expense}
-During each update of iterative bayesian inference, evaluation of the likelihood function will require new simulated evidence given a perturbed parameter set. However, with phase space overlap, new evidence at adjacent states can be estimated using multistate reweighting tools such as MBAR. \cite{mbar} Given MBAR has a much higher computational efficiency that fully simulating a new state, this could greatly accelerate full construction of a posterior distribution of parameters. \textit{Equation (2)} shown below is the formulation that allows for reduced free energies to be found at other states using a simulated state as reference, i.e. it allows for the solution of free energy differences.
+During each update of iterative bayesian inference, evaluation of the likelihood function will require new simulated evidence given a perturbed parameter set. However, with phase space overlap, new evidence at adjacent states can be estimated using multistate reweighting tools such as MBAR. \cite{mbar} Given MBAR has a much higher computational efficiency that fully simulating a new state, this could greatly accelerate full construction of a posterior distribution of parameters. \textbf{Equation (2)} shown below is the formulation that allows for reduced free energies to be found at other states using a simulated state as reference, i.e. it allows for the solution of free energy differences.
 \begin{equation} \hat{f}_i = \sum_{j=1}^{k}\sum_{n=1}^{N_j} \frac{\exp\left[-u_{i}\left(x_{jn}\right)\right]}{\sum_{k=1}^{K} N_k \exp\left[\hat{f}_k - u_{k}\left(x_{jn}\right)\right]}\end{equation}\\*
 Where $u$ is a reduced potential energy, $x$ is a configuration, $K$ is the number of states and $N$ is the number of configurations from the state. These free energy calculations also allow for estimating expectation values of certain obserables at the other thermodynamic states for which relative free energies were calculated. This is done by calculating relative weights of the unsampled states to the sampled states using the formulations shown below in \textbf{equations (3),(4) and (5)}.
 \begin{equation} W_{na} = \hat{c}_{a}^{-1} \frac{\exp\left[-u\left(x_{n}\right)\right]}{\sum_{k=1}^{K} N_k \exp\left[\hat{f}_k - u_{k}\left(x_{n}\right)\right]}\end{equation}\\*
