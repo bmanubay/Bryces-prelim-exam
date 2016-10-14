@@ -348,16 +348,6 @@ points, respectively.
 \label{fig:test}
 \end{figure}
 
-A point of interest that came up during this search of the ThermoML database is that although the AlkEthOH set is useful in the beginning stages
-of verifying the bayesian parameterization process by shrinking the parameter space, it extremely limits the chemical diversity and amount of 
-data that is available. One of the other searches that I did was on the full amount and diversity of data available for most conceivable organic
-species. For this search I expanded the atom filter in \textit{ThermoPyL} to allow other common organic atoms (such as S, N, B, P, F, Cl, Br and I) to
-pass, removed the bond order restrictions and kept the liquid phase filter. The results showed an extremely large and diverse set of data available when
-compared to the results of the AlkEthOH filter. Statistics are shown in \textbf{3(a)}. Additionally, another statistic I considered was the number 
-of molecules with at least certain numbers of pure solvent \textbf{and} binary mixture properties available. The statistics are shown in \textbf{figure 3(b)}. 
-Given this statistic there may be a limiting amount of data available to constrain parameter space across the full chemical diversity of the AlkEthOH set, 
-however it should be much less of an issue when considering a larger chemical space. The issue then becomes dealing with a much larger and more 
-complex parameter space.
 \begin{figure}[h!]
 \centering
 \begin{subfigure}{.5\textwidth}
@@ -375,6 +365,16 @@ complex parameter space.
 \caption{The two figures show that there is an extreme diversity of molecular coverage available in the total ThermoML database and that the full organic liquid data availavle has a much better chance of well constraining parameter space when compared to the AlkEthOH set}
 \label{fig:test}
 \end{figure}
+A point of interest that came up during this search of the ThermoML database is that although the AlkEthOH set is useful in the beginning stages
+of verifying the bayesian parameterization process by shrinking the parameter space, it extremely limits the chemical diversity and amount of 
+data that is available. One of the other searches that I did was on the full amount and diversity of data available for most conceivable organic
+species. For this search I expanded the atom filter in \textit{ThermoPyL} to allow other common organic atoms (such as S, N, B, P, F, Cl, Br and I) to
+pass, removed the bond order restrictions and kept the liquid phase filter. The results showed an extremely large and diverse set of data available when
+compared to the results of the AlkEthOH filter. Statistics are shown in \textbf{5(a)}. Additionally, another statistic I considered was the number 
+of molecules with at least certain numbers of pure solvent \textbf{and} binary mixture properties available. The statistics are shown in \textbf{figure 5(b)}. 
+Given this statistic there may be a limiting amount of data available to constrain parameter space across the full chemical diversity of the AlkEthOH set, 
+however it should be much less of an issue when considering a larger chemical space. The issue then becomes dealing with a much larger and more 
+complex parameter space.
 
 \subsubsection{Exploring the use of multistate reweighting to reduce computational expense}
 Despite the amount of time spent exploring the safe magnitude of parameter changes that result in accurate reweighted estimates of bond length and angle 
