@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  14 OCT 2016 03:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  14 OCT 2016 03:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1568,7 +1568,7 @@ phic file (type png)
 <use /home/bmanubay/Bryces-prelim-exam/report/images/ThermoML_workflow.PNG>
 Package pdftex.def Info: /home/bmanubay/Bryces-prelim-exam/report/images/Thermo
 ML_workflow.PNG used on input line 263.
-(pdftex.def)             Requested size: 105.69415pt x 61.26051pt.
+(pdftex.def)             Requested size: 211.3883pt x 122.52103pt.
 
 [3 </home/bmanubay/Bryces-prelim-exam/report/images/Bayesian_inference_workflow
 .PNG>]
@@ -1645,13 +1645,13 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `en'. Using the pattern for
-** the default language instead.
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `en'. Using the pattern for
-** the default language instead.
 [5]
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
@@ -1677,13 +1677,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 36867 strings out of 493013
- 713120 string characters out of 6133329
- 797992 words of memory out of 5000000
+ 36876 strings out of 493013
+ 713402 string characters out of 6133329
+ 796992 words of memory out of 5000000
  39565 multiletter control sequences out of 15000+600000
- 123894 words of font info for 233 fonts, out of 8000000 for 9000
+ 124863 words of font info for 239 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,7n,92p,10388b,963s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,7n,92p,10388b,959s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/sourcesanspro/a_5tbsmu.en
 c}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/sourcesanspro/a_ggs4wk.en
 c}</usr/local/texlive/2016/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSan
@@ -1693,7 +1693,7 @@ ourcesanspro/SourceSansPro-Regular.pfb></usr/local/texlive/2016/texmf-dist/font
 s/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report_outline.pdf (6 pages, 345246 bytes).
+Output written on report_outline.pdf (6 pages, 345228 bytes).
 PDF statistics:
  196 PDF objects out of 1000 (max. 8388607)
  175 compressed objects within 2 object streams
