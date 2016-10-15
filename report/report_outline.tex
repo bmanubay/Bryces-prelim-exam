@@ -126,7 +126,6 @@
 
 \hspace{0.5 in} (Dated: \today) 
 
-
 \section{Objectives}
 Molecular dynamics (MD) simulation is fast becoming a more useful tool in many scientific studies. 
 However, some limitations remain in the ability of MD force fields to accurately and transferably 
@@ -145,7 +144,6 @@ thus far. First, collecting and curating large amounts of high quality experimen
 and, currently, investigating use of the Multistate Bennett Acceptance Ratio (MBAR) as a means to improve 
 parameterization throughput by reducing computational expense while making updates to the posterior distribution 
 of parameter sets consistent with experimental evidence.
-
 \section{Significance}
 A broad variety of research from drug discovery to metallurgy has been greatly impacted by the advent and 
 improvement of MD simulation tools. Observing physical phenomena such as protein folding dynamics and ligand 
@@ -170,14 +168,6 @@ to automatically and systematically explore choices of fitting data, optimizatio
 forms in order to objectively find families of force fields consistent with fitting data and reward those with 
 the least model complexity. The bayesian inference scheme described in this paper will provide a workflow for 
 discovering families of force field parameters consistent with experimental data and a variety of functional forms.
-
-Additionally, as I will demonstrate later in my discussion of data mining and curation of the NIST ThermoML database,
-the chemical diversity in readily available thermochemical databases is lacking. Not only that, but the distribution of data
-amongst commonly measured properties is heavily skewed towards certain properties. Having learned this since beginning the
-project, one of the potential uses of the parameterization scheme is to fill in the many gaps in experimental thermochemical 
-data. With updated general descriptions of chemical space and property data on chemically similar compounds, this parameterization
-process should provide force fields to accurately simulate property data for which no experimental data exists. 
-
 \section{Background and related literature}
 Molecular dynamics force fields define how to construct the potential energy functions (and thereby the forces) 
 of an atomistic system under study. The potential is constructed such that it is a function of solely the atomic 
@@ -235,7 +225,6 @@ of the parameterizatoin workflow is shown in \textbf{figure 1}.
   \includegraphics[width=1.0\textwidth]{Bayesian_inference_workflow}
   \caption{A schematic overview of the bayesian inference workflow where force field parameters are inferred given experimental data and a model}
  \end{figure}
-
 \section{Methods}
 \subsection{Data mining and curation of thermochemical data in ThermoML}
 The experimental thermochemical data to be used for the parameterization process was collected from the NIST ThermoML database managed by the 
@@ -268,7 +257,6 @@ to validate the machinery for parameterization. Finally, only data with temperat
 250 - 400 K and pressures 1 - 1000 atm, in the liquid phase, are kept. The data is then saved in an easily machine-readable format such as JSON or PKL. Additionally, potential data 
 for use as evidence was sent to the the TRC for validation of quality. The likelihood function described earlier will be a function of uncertainties associated
 with the evidence, thus accurate estimates are imperative. The TRC checks internally kept uncertainty estimates against what authors published and notes any outliers. 
-
 \subsection{Exploring the use of multistate reweighting to reduce computational expense}
 During each update of iterative bayesian inference, evaluation of the likelihood function will require new simulated evidence given a perturbed parameter set. However, with sufficient phase space overlap, new evidence at adjacent states can be estimated using multistate reweighting tools such as MBAR. \cite{mbar} MBAR has a much higher computational efficiency than fully simulating a new state, thus this could greatly accelerate full construction of a posterior distribution of parameters. \textbf{Equation (2)} shown below is the formulation that allows for reduced free energies to be found at other states using a simulated state as reference, i.e. it allows for the solution of free energy differences.
 \begin{equation} \hat{f}_i = \sum_{j=1}^{k}\sum_{n=1}^{N_j} \frac{\exp\left[-u_{i}\left(x_{jn}\right)\right]}{\sum_{k=1}^{K} N_k \exp\left[\hat{f}_k - u_{k}\left(x_{jn}\right)\right]}\end{equation}\\*
@@ -277,7 +265,6 @@ Where $u$ is a reduced potential energy, $x$ is a configuration, $K$ is the numb
 \begin{equation} \hat{c}_a = \sum_{n=1}^{N} \frac{\exp\left[-u\left(x_{n}\right)\right]}{\sum_{k=1}^{K} N_k \exp\left[\hat{f}_k - u_{k}\left(x_{n}\right)\right]}\end{equation}
 \begin{equation} \hat{A} = \sum_{n=1}^{N} W_{na} A\left(x_n\right)\end{equation}
 Where $A(x)$ is some mechanical observable, $W_{na}$ is a weight and $\hat{A}$ is the estimated expectation of $A(x)$. 
-
 The goal of this exercise is to see how large of parameter perturbations can be made and still make accurate estimates of some observable at that new perturbed state. For this testing phase we use a toy problem of with single molecule simulation observables, such as bond lengths and angles, as the evidence for verifying the validity of the bayesian inference process in the least computationally expensive manner. For testing the safe extent of parameter perturbation I have devised a simple scheme for comparison of reweighted observable estimates to a true sampled value. I created a reweighting script using the Python implementation
 of MBAR called \textit{pymbar} in order to make estimates of observables at new parameter states. I decided on two criteria for assessing the accuracy
 of a reweighted estimate: $\left(1\right)$ the estimated uncertainty of the estimated expectation of an observable must be within $20 \%$ of a bootstraped uncertainty estimate with 100 samples and $\left(2\right)$ the estimated value of the observable being calculated must be within $2$ standard deviations of the true
@@ -288,7 +275,6 @@ Since one of my criteria for accurate reweighting is the estimated observable be
 single molecule simulations for use as evidence. Simulations were carried out using the OpenMM simulation suite. Each simulation was carried out at 
 $300 K$ for a total of $200 ps$ each in an $NVT$ ensemble. The system was integrated with Langevin dynamics and $100$ snapshots were recorded 
 during every simulation.
-
 \section{Progress}
 \subsection{Data mining and curation of thermochemical data in ThermoML}
 Upon first inspections of the ThermoML database it became immediately clear that the data was extremely concentrated in certain properties for both 
@@ -364,7 +350,6 @@ of molecules with at least certain numbers of pure solvent \textbf{and} binary m
 Given this statistic there may be a limiting amount of data available to constrain parameter space across the full chemical diversity of the AlkEthOH set, 
 however it should be much less of an issue when considering a larger chemical space. The issue then becomes dealing with a much larger and more 
 complex parameter space.
-
 \subsection{Exploring the use of multistate reweighting to reduce computational expense}
 Despite the amount of time spent exploring the safe magnitude of parameter changes that result in accurate reweighted estimates of bond length and angle 
 observables, results are still inconclusive. It was originally hypothesized that the allowable percent changes in bond or angle force constants were 
@@ -373,18 +358,16 @@ However, while this is true of many of the molecules tested, it is not true for 
 investigated in order to get a more conclusive result of how the percent change in parameter and proportion of the molecule affected by the change relate. 
 Additionally, I hypothesize that the allowed changes in geometric parameters such as minimum bond length and equilibrium angle will not be percents, but will
 be bounded by constraints of molecular geometry. This has yet to be tested though. 
-
 \section{Research plan}
 Short-term the trajectory of the research plan is quite clear. The first thing to be done is to finish developing general guidelines for the allowed magnitude
 of parameter changes that will result in accurate reweighted estimates of bond length and angle observables. Once the guidelines are clear they are to be 
-used in testing the bayesian inference machinery using single molecule observables as evidence. The concept for the test is as follows:
-\begin{itemize}
- \item [1] Simulate distributions of bond lengths and angles using a correct original force field. This will be our evidence.
- \item [2] Perturb the force field to have clearly wrong or unphysical parameters.
- \item [3] Using the bayesian updating scheme, attempt to iteratively determine a set of parameters which reproduces the original evidence
-\end{itemize}
-Currently the bayesian sampling machinery is being developed my members of the Mobley lab at UCI and the Chodera lab at MSKCC. Depending on the results of the
-guidline development for allowable parameter changes, it may be necessary to explore configurational mapping as a means to accurately calculate free energy differences between non-overlapping states.\cite{mapping} The goal is to have this toy project finished by the end of the Fall 2016 semester. 
+used in testing the bayesian inference machinery using single molecule observables as evidence. The concept for the test is as follows: \textbf{(1)} 
+Simulate distributions of bond lengths and angles using a correct original force field. This will be our evidence; \textbf{(2)} Perturb the force field to 
+have clearly wrong or unphysical parameters; \textbf{(3)} Using the bayesian updating scheme, attempt to iteratively determine a set of parameters which 
+reproduces the original evidence. Currently the bayesian sampling machinery is being developed my members of the Mobley lab at UCI and the Chodera lab 
+at MSKCC. Depending on the results of the guidline development for allowable parameter changes, it may be necessary to explore configurational mapping 
+as a means to accurately calculate free energy differences between non-overlapping states.\cite{mapping} The goal is to have this toy project 
+finished by the end of the Fall 2016 semester. 
 
 Long-term we would like to implement the bayesian inference parameterization procedure using the experimental thermochemical data I curated as evidence. 
 Currently the property calculation API, which will both implement calculation of expectation values of mechanical observables from simulation data and 
