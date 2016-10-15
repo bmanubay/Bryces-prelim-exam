@@ -172,12 +172,10 @@ discovering families of force field parameters consistent with experimental data
 Molecular dynamics force fields define how to construct the potential energy functions (and thereby the forces) 
 of an atomistic system under study. The potential is constructed such that it is a function of solely the atomic 
 coordinates and a set of parameters associated with the force field. Transferable force fields generally have 
-three major parts: 
-  \begin{itemize}
-   \item [1] The \textbf{functional forms} of the potential, i.e. the mathematical equations for the energy equation. A classic example of a non-bonded interaction form is the 12-6 Lennard-Jones (LJ) potential.   
-   \item [2] \textbf{Atom types} which describe similar chemical environments such that one can assign different atoms (or series of atoms) identical parameters, thereby shrinking the parameter space and helping to avoid overfitting.
-   \item [3] \textbf{Parameters} that are associated with one or many atom types which determine the magnitude of the interactions in the system 
-  \end{itemize}
+three major parts: \textbf{(1)}The \textbf{functional forms} of the potential, i.e. the mathematical equations for the energy. 
+A classic example of a non-bonded interaction form is the 12-6 Lennard-Jones (LJ) potential; \textbf{(2)} \textbf{Atom types} 
+which describe similar chemical environments such that one can assign different atoms identical parameters; \textbf{(3)} \textbf{Parameters} 
+that are associated with one or many atom types which determine the magnitude of the interactions in the system. 
 Rolled into functional forms, \textbf{combining rules} are also sometimes considered. \textbf{Combining rules} describe how to combine parameters 
 when an interaction contains multiple atom types.
 
@@ -218,13 +216,8 @@ of observing $D$ given $\theta$ (the \textit{likelihood function}) and the proba
 iterative bayesian inference, the posterior of the previous round becomes the prior in the new iteration. This bayesian 
 inference produces not just a single parameter set, but an entire posterior distribution of parameters given data. This is advantageous 
 given that many different parameter sets can be consistent with the data used and the distribution of these consistent 
-sets of parameters can inform what new data could help narrow the distribution and improve the parameter estimates. An overview
-of the parameterizatoin workflow is shown in \textbf{figure 1}. 
- \begin{figure}[h!]
-  \centering
-  \includegraphics[width=1.0\textwidth]{Bayesian_inference_workflow}
-  \caption{A schematic overview of the bayesian inference workflow where force field parameters are inferred given experimental data and a model}
- \end{figure}
+sets of parameters can inform what new data could help narrow the distribution and improve the parameter estimates. 
+
 \section{Methods}
 \subsection{Data mining and curation of thermochemical data in ThermoML}
 The experimental thermochemical data to be used for the parameterization process was collected from the NIST ThermoML database managed by the 
@@ -296,14 +289,14 @@ neat liquid properties and binary mixture properties.
 \caption{The distributions of data amongst neat liquid and binary mixture properties of interest}
 \label{fig:test}
 \end{figure}
-As shown in \textbf{figure 2} the data is most concentrated in mass density. The amount of data per property exponentially decays
+As shown in \textbf{figure 1} the data is most concentrated in mass density. The amount of data per property exponentially decays
 until there is as little as a few dozen data points in certain properties. Initially, the OpenFF team (including myself, Michael Shirts, the 
 Mobley lab at UCI and the Chodera lab at MSKCC) thought that this could severely limit our ability to constrain parameters beyond those 
 associated with non-bonded interactions. However, after consultation with Chris Bayly we hypothesize that despite the lack of data in certain properties
 the chemical diversity in the data will allow us to fully constrain a large swath of parameter space.
 
 Considering the three chemical classes (or environments) of the AlkEthOH set (alkanes, ethers and alcohols) the number of unique molecules per chemical class is quite balanced 
-across both neat liquid and binary mixture properties of interest. Additionally, it was determined that although the total amount of available data per chemical class is unbalanced, it is still quite ample (especially when considering the binary mixture property data). \textbf{Figure 3(a) and 3(b)} illustrate these
+across both neat liquid and binary mixture properties of interest. Additionally, it was determined that although the total amount of available data per chemical class is unbalanced, it is still quite ample (especially when considering the binary mixture property data). \textbf{Figure 2(a) and 2(b)} illustrate these
 points, respectively.
 \begin{figure}[h!]
 \centering
@@ -345,8 +338,8 @@ of verifying the bayesian parameterization process by shrinking the parameter sp
 data that is available. One of the other searches that I did was on the full amount and diversity of data available for most conceivable organic
 species. For this search I expanded the atom filter in \textit{ThermoPyL} to allow other common organic atoms (such as S, N, B, P, F, Cl, Br and I) to
 pass, removed the bond order restrictions and kept the liquid phase filter. The results showed an extremely large and diverse set of data available when
-compared to the results of the AlkEthOH filter. Statistics are shown in \textbf{4(a)}. Additionally, another statistic I considered was the number 
-of molecules with at least certain numbers of pure solvent \textbf{and} binary mixture properties available. The statistics are shown in \textbf{figure 4(b)}. 
+compared to the results of the AlkEthOH filter. Statistics are shown in \textbf{3(a)}. Additionally, another statistic I considered was the number 
+of molecules with at least certain numbers of pure solvent \textbf{and} binary mixture properties available. The statistics are shown in \textbf{figure 3(b)}. 
 Given this statistic there may be a limiting amount of data available to constrain parameter space across the full chemical diversity of the AlkEthOH set, 
 however it should be much less of an issue when considering a larger chemical space. The issue then becomes dealing with a much larger and more 
 complex parameter space.
