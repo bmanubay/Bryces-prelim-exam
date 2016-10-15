@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  14 OCT 2016 18:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  14 OCT 2016 18:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1651,10 +1651,10 @@ d_property_coverage.png used on input line 319.
 /home/bmanubay/Bryces-prelim-exam/report/images/data_per_chemistry.png> </home/
 bmanubay/Bryces-prelim-exam/report/images/Molecules_per_property.png> </home/bm
 anubay/Bryces-prelim-exam/report/images/Coupled_property_coverage.png>]
-(./report_outline.bbl
+[6] (./report_outline.bbl
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
 (Font)              scaled to size 10.95pt on input line 28.
- [6]
+
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `eng'. Using the pattern for
 ** the default language instead.
@@ -1714,13 +1714,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 36903 strings out of 493013
- 714593 string characters out of 6133329
- 798993 words of memory out of 5000000
- 39584 multiletter control sequences out of 15000+600000
+ 36902 strings out of 493013
+ 714583 string characters out of 6133329
+ 797993 words of memory out of 5000000
+ 39583 multiletter control sequences out of 15000+600000
  124412 words of font info for 238 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,9n,92p,10388b,1007s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,9n,92p,10388b,1003s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/sourcesanspro/a_5tbsmu.en
 c}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/sourcesanspro/a_ggs4wk.en
 c}</usr/local/texlive/2016/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSan
@@ -1735,7 +1735,7 @@ pe1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy7.pfb>
-Output written on report_outline.pdf (9 pages, 325782 bytes).
+Output written on report_outline.pdf (9 pages, 325828 bytes).
 PDF statistics:
  265 PDF objects out of 1000 (max. 8388607)
  227 compressed objects within 3 object streams
