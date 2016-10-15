@@ -236,13 +236,8 @@ of the parameterizatoin workflow is shown in \textbf{figure 1}.
   \caption{A schematic overview of the bayesian inference workflow where force field parameters are inferred given experimental data and a model}
  \end{figure}
 
-The remaining \textbf{Methods} and \textbf{Progress} sections will be split it into two parts each. The first will address the 
-problem of gathering, categorizing and curating large amounts of experimental thermochemical data for use as evidence in the 
-bayesian inference scheme. The second part will discuss how to address decreasing the computational expense of the simulations
-required for the parameterization process using MBAR to estimate simulated properties at new parameter states.  
-
-\subsection{Methods}
-\subsubsection{Data mining and curation of thermochemical data in ThermoML}
+\section{Methods}
+\subsection{Data mining and curation of thermochemical data in ThermoML}
 The experimental thermochemical data to be used for the parameterization process was collected from the NIST ThermoML database managed by the 
 Thermodynamics Research Center (TRC) at the NIST Boulder campus. In order to explore the composition of the data in ThermoML I used the \textit{ThermoPyL}
 Python tool developed by the Chodera lab at the Memorial Sloan Kettering Cancer Center (MSKCC).\cite{thermopyl} The \textit{ThermoPyL} tool parses the
@@ -264,12 +259,7 @@ collected, but it was decided not to be included as evidence in the initial test
 decided that because we are parameterizing a purely liquid force field, phase change properties might only serve to complicate the process. This data will 
 be kept to check the accuracy of the force field in simulating this property for a wide array of chemistries. 
 
-\begin{wrapfigure}[15]{r}{0.5\textwidth}
- \centering
- \includegraphics[width=0.9\textwidth]{ThermoML_workflow}
- \caption{A simplified diagram of the filtering algorithm used to find experimental data for use as evidence}
-\end{wrapfigure}
-A flow diagram representing the filtering process is shown in \textbf{figure 2}. The process is started by organizing a locally stored version of the 
+The data filtering process is started by organizing a locally stored version of the 
 ThermoML database into a Pandas dataframe. First, a filter is applied to discard journal articles with known erroneous data. Next, we filter all data if it doesn't 
 fall within our previous properties of interest list. Filters for chemical composition and bond order are next applied, specifically it was decided that for initial 
 testing to only look at organics containing C, O and/or H atoms with single or aromatic bonding. Additionally, the molecules had another filter such that they must appear
@@ -277,10 +267,9 @@ in a diverse list of alkanes, ethers and alcohols (coined AlkEthOH) that was con
 to validate the machinery for parameterization. Finally, only data with temperatures  
 250 - 400 K and pressures 1 - 1000 atm, in the liquid phase, are kept. The data is then saved in an easily machine-readable format such as JSON or PKL. Additionally, potential data 
 for use as evidence was sent to the the TRC for validation of quality. The likelihood function described earlier will be a function of uncertainties associated
-with the evidence, thus accurate estimates are imperative. The TRC group led by Ken Kroenlein have internally kept estimates for uncertainties of all data points
-in ThermoML. Thus, their screening involves checking their uncertainty estimates against what authors published and noting any outliers. 
+with the evidence, thus accurate estimates are imperative. The TRC checks internally kept uncertainty estimates against what authors published and notes any outliers. 
 
-\subsubsection{Exploring the use of multistate reweighting to reduce computational expense}
+\subsection{Exploring the use of multistate reweighting to reduce computational expense}
 During each update of iterative bayesian inference, evaluation of the likelihood function will require new simulated evidence given a perturbed parameter set. However, with sufficient phase space overlap, new evidence at adjacent states can be estimated using multistate reweighting tools such as MBAR. \cite{mbar} MBAR has a much higher computational efficiency than fully simulating a new state, thus this could greatly accelerate full construction of a posterior distribution of parameters. \textbf{Equation (2)} shown below is the formulation that allows for reduced free energies to be found at other states using a simulated state as reference, i.e. it allows for the solution of free energy differences.
 \begin{equation} \hat{f}_i = \sum_{j=1}^{k}\sum_{n=1}^{N_j} \frac{\exp\left[-u_{i}\left(x_{jn}\right)\right]}{\sum_{k=1}^{K} N_k \exp\left[\hat{f}_k - u_{k}\left(x_{jn}\right)\right]}\end{equation}\\*
 Where $u$ is a reduced potential energy, $x$ is a configuration, $K$ is the number of states and $N$ is the number of configurations from the state. These free energy calculations also allow for estimating expectation values of observables at the other thermodynamic states for which relative free energies were calculated. This is done by calculating relative weights of the unsampled states to the sampled states using the formulations shown below in \textbf{equations (3),(4) and (5)}.
@@ -300,8 +289,8 @@ single molecule simulations for use as evidence. Simulations were carried out us
 $300 K$ for a total of $200 ps$ each in an $NVT$ ensemble. The system was integrated with Langevin dynamics and $100$ snapshots were recorded 
 during every simulation.
 
-\subsection{Progress}
-\subsubsection{Data mining and curation of thermochemical data in ThermoML}
+\section{Progress}
+\subsection{Data mining and curation of thermochemical data in ThermoML}
 Upon first inspections of the ThermoML database it became immediately clear that the data was extremely concentrated in certain properties for both 
 neat liquid properties and binary mixture properties. 
 \begin{figure}[h!]
@@ -321,14 +310,14 @@ neat liquid properties and binary mixture properties.
 \caption{The distributions of data amongst neat liquid and binary mixture properties of interest}
 \label{fig:test}
 \end{figure}
-As shown in \textbf{figure 3} the data is most concentrated in mass density. The amount of data per property exponentially decays
+As shown in \textbf{figure 2} the data is most concentrated in mass density. The amount of data per property exponentially decays
 until there is as little as a few dozen data points in certain properties. Initially, the OpenFF team (including myself, Michael Shirts, the 
 Mobley lab at UCI and the Chodera lab at MSKCC) thought that this could severely limit our ability to constrain parameters beyond those 
 associated with non-bonded interactions. However, after consultation with Chris Bayly we hypothesize that despite the lack of data in certain properties
 the chemical diversity in the data will allow us to fully constrain a large swath of parameter space.
 
 Considering the three chemical classes (or environments) of the AlkEthOH set (alkanes, ethers and alcohols) the number of unique molecules per chemical class is quite balanced 
-across both neat liquid and binary mixture properties of interest. Additionally, it was determined that although the total amount of available data per chemical class is unbalanced, it is still quite ample (especially when considering the binary mixture property data). \textbf{Figure 4(a) and 4(b)} illustrate these
+across both neat liquid and binary mixture properties of interest. Additionally, it was determined that although the total amount of available data per chemical class is unbalanced, it is still quite ample (especially when considering the binary mixture property data). \textbf{Figure 3(a) and 3(b)} illustrate these
 points, respectively.
 \begin{figure}[h!]
 \centering
@@ -370,13 +359,13 @@ of verifying the bayesian parameterization process by shrinking the parameter sp
 data that is available. One of the other searches that I did was on the full amount and diversity of data available for most conceivable organic
 species. For this search I expanded the atom filter in \textit{ThermoPyL} to allow other common organic atoms (such as S, N, B, P, F, Cl, Br and I) to
 pass, removed the bond order restrictions and kept the liquid phase filter. The results showed an extremely large and diverse set of data available when
-compared to the results of the AlkEthOH filter. Statistics are shown in \textbf{5(a)}. Additionally, another statistic I considered was the number 
-of molecules with at least certain numbers of pure solvent \textbf{and} binary mixture properties available. The statistics are shown in \textbf{figure 5(b)}. 
+compared to the results of the AlkEthOH filter. Statistics are shown in \textbf{4(a)}. Additionally, another statistic I considered was the number 
+of molecules with at least certain numbers of pure solvent \textbf{and} binary mixture properties available. The statistics are shown in \textbf{figure 4(b)}. 
 Given this statistic there may be a limiting amount of data available to constrain parameter space across the full chemical diversity of the AlkEthOH set, 
 however it should be much less of an issue when considering a larger chemical space. The issue then becomes dealing with a much larger and more 
 complex parameter space.
 
-\subsubsection{Exploring the use of multistate reweighting to reduce computational expense}
+\subsection{Exploring the use of multistate reweighting to reduce computational expense}
 Despite the amount of time spent exploring the safe magnitude of parameter changes that result in accurate reweighted estimates of bond length and angle 
 observables, results are still inconclusive. It was originally hypothesized that the allowable percent changes in bond or angle force constants were 
 propotional to the percent of the molecule that was affected by the parameter change (i.e. how many instances of the atom type changed occur in the molecule).
@@ -385,7 +374,7 @@ investigated in order to get a more conclusive result of how the percent change 
 Additionally, I hypothesize that the allowed changes in geometric parameters such as minimum bond length and equilibrium angle will not be percents, but will
 be bounded by constraints of molecular geometry. This has yet to be tested though. 
 
-\subsection{Research plan}
+\section{Research plan}
 Short-term the trajectory of the research plan is quite clear. The first thing to be done is to finish developing general guidelines for the allowed magnitude
 of parameter changes that will result in accurate reweighted estimates of bond length and angle observables. Once the guidelines are clear they are to be 
 used in testing the bayesian inference machinery using single molecule observables as evidence. The concept for the test is as follows:
