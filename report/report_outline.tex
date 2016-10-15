@@ -263,11 +263,6 @@ of MBAR called \textit{pymbar} in order to make estimates of observables at new 
 of a reweighted estimate: $\left(1\right)$ the estimated uncertainty of the estimated expectation of an observable must be within $20 \%$ of a bootstraped uncertainty estimate with 100 samples and $\left(2\right)$ the estimated value of the observable being calculated must be within $2$ standard deviations of the true
 sampled value. These success criteria are motivated for the fact that: $\left(1\right)$ the MBAR estimate and bootstrapped uncertainties should converge with 
 sufficient phase space overlap and $\left(2\right)$ the simulated distributions of bond lengths and angles are Gaussian. 
-
-Since one of my criteria for accurate reweighting is the estimated observable being within a certain number of standard deviations from the true sampled value, many simulations with perturbed force field parameters had to be run. Using ten selected molecules from the AlkEthOH set, I have run $~2900$
-single molecule simulations for use as evidence. Simulations were carried out using the OpenMM simulation suite. Each simulation was carried out at 
-$300 K$ for a total of $200 ps$ each in an $NVT$ ensemble. The system was integrated with Langevin dynamics and $100$ snapshots were recorded 
-during every simulation.
 \section{Progress}
 \subsection{Data mining and curation of thermochemical data in ThermoML}
 Upon first inspections of the ThermoML database it became immediately clear that the data was extremely concentrated in certain properties for both 
