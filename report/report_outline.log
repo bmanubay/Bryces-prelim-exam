@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  14 OCT 2016 18:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.7)  14 OCT 2016 18:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1587,41 +1587,42 @@ raphic file (type png)
 
 <use /home/bmanubay/Bryces-prelim-exam/report/images/Mixture_data_counts.png>
 Package pdftex.def Info: /home/bmanubay/Bryces-prelim-exam/report/images/Mixtur
-e_data_counts.png used on input line 280.
+e_data_counts.png used on input line 279.
 (pdftex.def)             Requested size: 211.3883pt x 195.72662pt.
 
 ! You can't use `\vadjust' in vertical mode.
 <argument> \vadjust 
                     {\do@output@cclv {\@add@float }}\@Esphack 
-l.286 \end{figure}
+l.284 \end{figure}
                   
 ? 
-[4 </home/bmanubay/Bryces-prelim-exam/report/images/Pure_data_counts.png> </hom
-e/bmanubay/Bryces-prelim-exam/report/images/Mixture_data_counts.png>]
-</home/bmanubay/Bryces-prelim-exam/report/images/types_per_chemistry.png, id=14
-6, 402.50375pt x 345.29pt>
+
+</home/bmanubay/Bryces-prelim-exam/report/images/types_per_chemistry.png, id=13
+7, 402.50375pt x 345.29pt>
 File: /home/bmanubay/Bryces-prelim-exam/report/images/types_per_chemistry.png G
 raphic file (type png)
 
 <use /home/bmanubay/Bryces-prelim-exam/report/images/types_per_chemistry.png>
 Package pdftex.def Info: /home/bmanubay/Bryces-prelim-exam/report/images/types_
-per_chemistry.png used on input line 300.
+per_chemistry.png used on input line 298.
 (pdftex.def)             Requested size: 211.3883pt x 181.3379pt.
 
-</home/bmanubay/Bryces-prelim-exam/report/images/data_per_chemistry.png, id=147
+</home/bmanubay/Bryces-prelim-exam/report/images/data_per_chemistry.png, id=138
 , 442.65375pt x 345.29pt>
 File: /home/bmanubay/Bryces-prelim-exam/report/images/data_per_chemistry.png Gr
 aphic file (type png)
 
 <use /home/bmanubay/Bryces-prelim-exam/report/images/data_per_chemistry.png>
 Package pdftex.def Info: /home/bmanubay/Bryces-prelim-exam/report/images/data_p
-er_chemistry.png used on input line 305.
+er_chemistry.png used on input line 303.
 (pdftex.def)             Requested size: 211.3883pt x 164.89432pt.
 
+[4 </home/bmanubay/Bryces-prelim-exam/report/images/Pure_data_counts.png> </hom
+e/bmanubay/Bryces-prelim-exam/report/images/Mixture_data_counts.png>]
 ! You can't use `\vadjust' in vertical mode.
 <argument> \vadjust 
                     {\do@output@cclv {\@add@float }}\@Esphack 
-l.310 \end{figure}
+l.308 \end{figure}
                   
 ? 
 
@@ -1633,7 +1634,7 @@ g Graphic file (type png)
 <use /home/bmanubay/Bryces-prelim-exam/report/images/Molecules_per_property.png
 >
 Package pdftex.def Info: /home/bmanubay/Bryces-prelim-exam/report/images/Molecu
-les_per_property.png used on input line 316.
+les_per_property.png used on input line 314.
 (pdftex.def)             Requested size: 211.3883pt x 240.8869pt.
 
 </home/bmanubay/Bryces-prelim-exam/report/images/Coupled_property_coverage.png,
@@ -1644,20 +1645,16 @@ File: /home/bmanubay/Bryces-prelim-exam/report/images/Coupled_property_coverage
 <use /home/bmanubay/Bryces-prelim-exam/report/images/Coupled_property_coverage.
 png>
 Package pdftex.def Info: /home/bmanubay/Bryces-prelim-exam/report/images/Couple
-d_property_coverage.png used on input line 322.
+d_property_coverage.png used on input line 319.
 (pdftex.def)             Requested size: 211.3883pt x 215.15263pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[5 </home/bmanubay/Bryces-prelim-exam/report/images/types_per_chemistry.png> </
-home/bmanubay/Bryces-prelim-exam/report/images/data_per_chemistry.png>]
+ [5 </home/bmanubay/Bryces-prelim-exam/report/images/types_per_chemistry.png> <
+/home/bmanubay/Bryces-prelim-exam/report/images/data_per_chemistry.png> </home/
+bmanubay/Bryces-prelim-exam/report/images/Molecules_per_property.png> </home/bm
+anubay/Bryces-prelim-exam/report/images/Coupled_property_coverage.png>]
 (./report_outline.bbl
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
 (Font)              scaled to size 10.95pt on input line 28.
- [6 </home/bmanubay/Bryces-prelim-exam/report/images/Molecules_per_property.png
-> </home/bmanubay/Bryces-prelim-exam/report/images/Coupled_property_coverage.pn
-g>]
+ [6]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `eng'. Using the pattern for
 ** the default language instead.
@@ -1705,10 +1702,10 @@ g>]
 ** loaded for the language `eng'. Using the pattern for
 ** the default language instead.
 [8]) [9]
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 373.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 373.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 369.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 369.
  (./report_outline.aux)
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 373.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 369.
 Package rerunfilecheck Info: File `report_outline.out' has not changed.
 (rerunfilecheck)             Checksum: 2083373553B68B6A86E091B27522FBEB;758.
 
@@ -1717,13 +1714,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 36905 strings out of 493013
- 714628 string characters out of 6133329
- 797993 words of memory out of 5000000
- 39586 multiletter control sequences out of 15000+600000
+ 36903 strings out of 493013
+ 714593 string characters out of 6133329
+ 798993 words of memory out of 5000000
+ 39584 multiletter control sequences out of 15000+600000
  124412 words of font info for 238 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,9n,92p,10388b,1003s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,9n,92p,10388b,1007s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/sourcesanspro/a_5tbsmu.en
 c}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/sourcesanspro/a_ggs4wk.en
 c}</usr/local/texlive/2016/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSan
@@ -1738,7 +1735,7 @@ pe1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy7.pfb>
-Output written on report_outline.pdf (9 pages, 325992 bytes).
+Output written on report_outline.pdf (9 pages, 325782 bytes).
 PDF statistics:
  265 PDF objects out of 1000 (max. 8388607)
  227 compressed objects within 3 object streams
